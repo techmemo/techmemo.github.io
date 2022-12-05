@@ -1,0 +1,23 @@
+<div class="col-md-3">
+          <div class="directory">
+            <h4>Tags</h4>
+            <br />
+            <ul>
+              <a href="(/tags/tag/)"><li>Tag (1)</li></a>
+            </ul>
+          </div>
+        </div>
+^^^ FOR ARTICLE LISTS ^^^ 
+
+vvv FOR ARTICLES vvv
+
+<div class="col-md-3">
+          <div class="directory">
+            <h4>Tags on this</h4>
+            <br />
+            <ul>
+              <a href="(/tags/tag/)"><li>Apple (1)</li></a>
+              <a href="(/tags/tag/)"><li>Software (1)</li></a>
+            </ul>
+          </div>
+        </div>

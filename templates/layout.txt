@@ -1,0 +1,6 @@
+article pages: 
+    - cited sources outside article box 
+    - link down to them within article (like wikipedia)
+
+superscript reference link
+    <a href=""><sup>[1]</sup></a>

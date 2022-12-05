@@ -1,0 +1,27 @@
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <ul class="new-articles">
+            <div class="big-article">
+              <div class="row">
+                <div class="col-lg-2 col-sm-3">
+                  <div class="big-frame">
+                    <img class="new-img" src="Untitled1.png" />
+                  </div>
+                </div>
+                <div class="col-sm-10">
+                  <h3>This is An Article On the New Page</h3>
+                  <h5>by Author Name - Month DD, YYYY</h5>
+                  <br />
+                  <p>
+                    This is descrbing the article. It is a very interesting
+                    article about very interesting things and nothing is boring
+                    about it. There is a lot to talk about here.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>

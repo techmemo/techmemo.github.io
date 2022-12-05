@@ -1,0 +1,147 @@
+.page-header {
+  padding-top: 30px;
+}
+
+.header-line {
+  border-top-style: solid;
+  border-top-color: gray;
+  border-width: 4px;
+  width: 5000px;
+  position: absolute;
+  left: 0px;
+}
+
+.pill {
+  background-color: gray;
+}
+
+.container-grid {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  align-items: stretch;
+  grid-template-areas:
+    ". ."
+    ". .";
+}
+
+.home-img {
+  min-width: 20%;
+  max-width: 22%;
+  height: auto;
+  position: relative;
+  top: 10%;
+  border-radius: 10px;
+}
+
+.home-article {
+  border-radius: 10px;
+  padding: 11px;
+  margin: 7px;
+  background-color: rgb(127, 169, 216);
+}
+.home-article:hover {
+  background-color: rgb(126, 144, 187);
+}
+
+.home-title {
+  display: inline;
+  position: relative;
+  text-align: left;
+  top: 15%;
+}
+.home-title > h2 {
+  font-size: 10px;
+}
+
+.new-articles {
+  position: relative;
+  right: 18%;
+}
+
+.scroll-article-list {
+  overflow: scroll;
+}
+
+.big-article {
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(127, 169, 216);
+}
+.big-article:hover {
+  background-color: rgb(126, 144, 187);
+}
+
+.big-article > h3,
+.big-article > p {
+  display: inline;
+}
+
+.big-frame {
+  width: 125px;
+  height: 125px;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.directory {
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(127, 169, 216);
+}
+
+.new-img {
+  max-height: 100%;
+  width: auto;
+  position: relative;
+  top: 10%;
+  border-radius: 10px;
+}
+
+.article {
+  border-radius: 8px;
+  background-color: rgb(150, 152, 155);
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.article-text {
+  margin-left: 4%;
+}
+
+.article-img {
+  border-radius: 35px;
+  padding: 2%;
+  width: 80%;
+}
+
+a > sup {
+  color: blue;
+}
+
+a > sup:hover {
+  color: blueviolet;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
