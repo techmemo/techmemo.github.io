@@ -98,6 +98,10 @@
   background-color: rgb(127, 169, 216);
 }
 
+.references {
+  word-wrap: break-word;
+}
+
 .new-img {
   max-height: 100%;
   width: auto;
