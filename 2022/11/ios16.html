@@ -80,7 +80,7 @@
           <div class="article">
             <h2>iOS 16 - Major Features and Future Updates</h2>
             <h5>by Matthew Nudelman</h5>
-            <h6>November 30, 2022</h6>
+            <h6 id="date">Month DD, YYYY</h6>
             <br />
             <p>
               <span class="article-text">
@@ -230,5 +230,10 @@
       <div class="row"></div>
     </div>
     <hr />
+    <script>
+      const publishDate = { month: "November", day: "30", year: "2022" };
+      document.getElementById("date").innerHTML =
+        publishDate.month + " " + publishDate.day + ", " + publishDate.year;
+    </script>
   </body>
 </html>

@@ -1,0 +1,5 @@
+make javascript file 
+put pubDate object in there 
+make array of pubDate objects 
+give each article an index to correspond to which object to pull from 
+in each article just import the file and have the script that fills the date box using the function from the file and the index 
