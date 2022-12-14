@@ -1,7 +1,13 @@
-citation highlighter [DONE]
+- citation highlighter [DONE]
 
-make javascript file 
-put pubDate object in there 
+make javascript file [DONE]
+ { 
+ put pubDate object in there 
 make array of pubDate objects 
 give each article an index to correspond to which object to pull from 
 in each article just import the file and have the script that fills the date box using the function from the file and the index 
+
+FUTURE PLAN: CHECK THE FOLDER THE ARTICLE IS IN AND ASSIGN MONTH BASED ON THE FOLDER
+
+have script in main.js to automatically fill the date box? find out which article is calling the function and set date based on it?
+} 

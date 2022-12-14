@@ -195,15 +195,8 @@
     </div>
     <hr />
     <script>
-      const pubDate = {
-        month: "December",
-        day: 3,
-        year: 2022,
-        publish: function () {
-          return this.month + " " + this.day + ", " + this.year;
-        },
-      };
-      document.getElementById("date").innerHTML = pubDate.publish();
+      document.getElementById("date").innerHTML =
+        dates[1].month + " " + dates[1].day + ", " + 2022;
     </script>
   </body>
 </html>

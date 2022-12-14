@@ -10,3 +10,20 @@ function hCite(c, n) {
     }
   }
 }
+
+const dates = [
+  { month: "November", day: 30 },
+  { month: "December", day: 3 },
+  { month: "December", day: 10 },
+];
+
+/* 
+
+ARTICLE INDICES -- (EACH NEW ARTICLE IS THE NEXT ONE)
+
+0 : ios16.html
+1 : ipad10.html
+2 : pixelwatch.html
+
+
+*/
