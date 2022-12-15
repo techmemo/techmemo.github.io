@@ -9,5 +9,7 @@ in each article just import the file and have the script that fills the date box
 
 FUTURE PLAN: CHECK THE FOLDER THE ARTICLE IS IN AND ASSIGN MONTH BASED ON THE FOLDER
 
-have script in main.js to automatically fill the date box? find out which article is calling the function and set date based on it?
+have function in main.js to automatically fill the date box? find out which article is calling the function and set date based on it? [DONE]
 } 
+
+identity of article box on list and get that and replace date based on it?

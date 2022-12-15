@@ -11,7 +11,64 @@ function hCite(c, n) {
   }
 }
 
-const dates = [
+function getFolder() {
+  var loc = window.location.pathname.split("/");
+
+  return loc[loc.length - 2];
+}
+
+function setMonth(f) {
+  switch (f) {
+    case "1":
+      return "January";
+      break;
+    case "2":
+      return "February";
+      break;
+    case "3":
+      return "March";
+      break;
+    case "4":
+      return "April";
+      break;
+    case "5":
+      return "May";
+      break;
+    case "6":
+      return "June";
+      break;
+    case "7":
+      return "July";
+      break;
+    case "8":
+      return "August";
+      break;
+    case "9":
+      return "September";
+      break;
+    case "10":
+      return "October";
+      break;
+    case "11":
+      return "November";
+      break;
+    case "12":
+      return "December";
+      break;
+    default:
+      return "Month";
+      break;
+  }
+}
+
+function dateFill(e, year) {
+  document.getElementById("date").innerHTML =
+    setMonth(getFolder()) + " " + dates[e] + ", " + year;
+}
+
+const dates = [30, 3, 10];
+
+const dates2 = [
   { month: "November", day: 30 },
   { month: "December", day: 3 },
   { month: "December", day: 10 },
