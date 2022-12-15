@@ -66,9 +66,10 @@ function dateFill(e, year) {
     setMonth(getFolder()) + " " + dates[e] + ", " + year;
 }
 
-const dates = [30, 3, 10];
+const dates = [30, 3, 10]; // using
 
 const dates2 = [
+  // not using
   { month: "November", day: 30 },
   { month: "December", day: 3 },
   { month: "December", day: 10 },

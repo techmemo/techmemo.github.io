@@ -110,7 +110,7 @@
   border-radius: 10px;
 }
 
-.article {
+article {
   border-radius: 8px;
   background-color: rgb(150, 152, 155);
   border-style: solid;
