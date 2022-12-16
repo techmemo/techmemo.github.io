@@ -5,16 +5,17 @@ make javascript file [DONE]
  put pubDate object in there 
 make array of pubDate objects 
 give each article an index to correspond to which object to pull from 
-in each article just import the file and have the script that fills the date box using the function from the file and the index 
+in each article just import the file and have the script that fills the date box using the function from the file and the index [DONE]
 
-FUTURE PLAN: CHECK THE FOLDER THE ARTICLE IS IN AND ASSIGN MONTH BASED ON THE FOLDER
+FUTURE PLAN: CHECK THE FOLDER THE ARTICLE IS IN AND ASSIGN MONTH BASED ON THE FOLDER [DONE]
 
 have function in main.js to automatically fill the date box? find out which article is calling the function and set date based on it? [DONE]
-} 
+} ^ DONE
 
 identity of article box on list and get that and replace date based on it?
 
+array of objects containing each article's info, can be used to create article box on list pages
 
 
-ULTIMATE GOAL: 
+LONG TERM GOAL: 
 Learn to build a system for publishing articles without needing to do it with the HTML?!

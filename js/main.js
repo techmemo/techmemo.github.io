@@ -17,6 +17,18 @@ function getFolder() {
   return loc[loc.length - 2];
 }
 
+// every article box text div has id "big-[htmlfilename]"
+function articleBox(title, desc, art, date) {
+  document.getElementById("big-" + art).innerHTML =
+    "<h3>" +
+    title +
+    "</h3><h5>by Matthew Nudelman - " +
+    date +
+    "</h5><br /><p>" +
+    desc +
+    "</p>";
+}
+
 function setMonth(f) {
   switch (f) {
     case "1":
