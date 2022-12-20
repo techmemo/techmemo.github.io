@@ -125,7 +125,7 @@ const big = [
 function newArtBox(n) {
   document.getElementById("big-" + big[n].id).innerHTML =
     '<div class="big-article"><div class="row"><div class="col-lg-2 col-sm-3"><div class="big-frame"><img class="new-img" src="/img/' +
-    id +
+    big[n].id +
     '.png" alt="' +
     big[n].alt +
     '" title="' +
