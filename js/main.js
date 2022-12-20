@@ -124,13 +124,13 @@ const big = [
 
 function newArtBox(n) {
   document.getElementById("big-" + big[n].id).innerHTML =
-    '<div class="big-article"><div class="row"><div class="col-lg-2 col-sm-3"><div class="big-frame"><img class="new-img" src="/img/' +
+    "<div class='big-article'><div class='row'><div class='col-lg-2 col-sm-3'><div class='big-frame'><img class='new-img' src='/img/" +
     big[n].id +
-    '.png" alt="' +
+    ".png' alt='" +
     big[n].alt +
-    '" title="' +
+    "' title='" +
     big[n].hover +
-    '"/></div></div><div class="col-sm-10"><h3> ' +
+    "'/></div></div><div class='col-sm-10'><h3> " +
     big[n].title +
     "</h3><h5> " +
     big[n].month +
