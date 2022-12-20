@@ -18,4 +18,4 @@ array of objects containing each article's info, can be used to create article b
 
 
 LONG TERM GOAL: 
-Learn to build a system for publishing articles without needing to do it with the HTML?!
+Learn to build a system for publishing articles without needing to do it in the HTML?!
