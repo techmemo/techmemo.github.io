@@ -199,6 +199,35 @@ function articleBox(n) {
   colb.appendChild(bigDesc);
 }
 
+function tagBox() {
+  let tagTitle = document.createElement("h4");
+  let listTags = document.createElement("ul");
+
+  document.getElementById("tagbox").appendChild(tagTitle);
+  document.getElementById("tagbox").appendChild(document.createElement("br"));
+  document.getElementById("tagbox").appendChild(listTags);
+
+  for (let i = 0; i < tags.length; i++) {
+    const link = document.createElement("a");
+    link.href = "/tags/" + tags[i].id + "/";
+    const item = document.createElement("li");
+    item.innerText = tags[i].title + "(" + tags[i].amt + ")";
+  }
+}
+/* <h4>Tags</h4>
+            <br />
+            <ul>
+              <a href="tags/apple/"><li>Apple (2)</li></a>
+              <a href="tags/software/"><li>Software (1)</li></a>
+              <a href="tags/google/"><li>Google (1)</li></a>
+            </ul> */
+
+const tags = [
+  { id: "apple", amt: "2", title: "Apple" },
+  { id: "software", amt: "1", title: "Software" },
+  { id: "google", amt: "1", title: "Google" },
+];
+
 const big = [
   // for article lists
 
