@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Newest | Techmemos</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row page-header">
+        <div class="col-md-2">
+          <a href="/"><h1>Techmemos</h1></a>
+        </div>
+        <div class="col-md-6">
+          <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"><b>Newest</b></a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <b>Topics</b>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="topic/phones.html">Phones</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="topic/tablets.html"
+                      >Tablets
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="topic/wearables.html"
+                      >Wearables</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="header-line"></div>
+      </div>
+      <div class="row"></div>
+    </div>
+
+    <div class="container">
+      <!-- this container is for the entire page, each new article goes within the list, on top -->
+      <h1><u>secret test page</u></h1>
+      <div class="row">
+        <div class="col-md-9">
+          <ul class="new-articles" id="big-list">
+            <!--big-article class is article template-->
+            <script>
+              testBox(2);
+              testBox(1);
+              testBox(0);
+            </script>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <div class="directory">
+            <h4>Directory</h4>
+            <br />
+            <ul>
+              <a href="2022/11"><li>November 2022</li></a>
+              <a href="2022/12"><li>December 2022</li></a>
+            </ul>
+          </div>
+          <div class="directory">
+            <h4>Tags</h4>
+            <br />
+            <ul>
+              <a href="tags/apple/"><li>Apple (2)</li></a>
+              <a href="tags/software/"><li>Software (1)</li></a>
+              <a href="tags/google/"><li>Google (1)</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+  </body>
+</html>

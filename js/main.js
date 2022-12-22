@@ -87,6 +87,62 @@ function oldArticleBox(title, desc, art, date) {
     "</p>";
 }
 
+function testBox(n) {
+  let bigLink = document.createElement("a");
+  bigLink.href = big[n].year + "/" + big[n].m + "/" + big[n].id + ".html";
+  document.getElementById("big-list").appendChild(bigLink);
+
+  let bigArticle = document.createElement("div");
+  bigArticle.classList = "big-article";
+  bigLink.appendChild(bigArticle);
+
+  let row = document.createElement("div");
+  row.classList = "row";
+  bigArticle.appendChild(row);
+
+  let cola = document.createElement("div");
+  cola.classList = "col-lg-2 col-sm-3";
+  row.appendChild(cola);
+
+  let imgFrame = document.createElement("div");
+  imgFrame.classList = "big-frame";
+  cola.appendChild(imgFrame);
+
+  let image = document.createElement("img");
+  image.src = "img/" + big[n].id + ".png";
+  image.classList = "new-img";
+  image.alt = big[n].alt;
+  image.title = big[n].hover;
+  imgFrame.appendChild(image);
+
+  let colb = document.createElement("div");
+  colb.classList = "col-sm-10";
+  row.appendChild(colb);
+
+  let bigTitle = document.createElement("h3");
+  bigTitle.innerText = big[n].title;
+  colb.appendChild(bigTitle);
+
+  const bigDate = document.createElement("h5");
+  bigDate.innerText =
+    "by " +
+    big[n].author +
+    " - " +
+    big[n].month +
+    " " +
+    big[n].day +
+    ", " +
+    big[n].year;
+  colb.appendChild(bigDate);
+
+  const lineBreak = document.createElement("br");
+  colb.appendChild(lineBreak);
+
+  const bigDesc = document.createElement("p");
+  bigDesc.innerText = big[n].desc;
+  colb.appendChild(bigDesc);
+}
+
 function articleBox(n) {
   let bigLink = document.createElement("a");
   bigLink.href = "/" + big[n].year + "/" + big[n].m + "/" + big[n].id + ".html";
@@ -181,6 +237,18 @@ const big = [
     year: "2022",
     alt: "The Google Pixel Watch.",
     hover: "The first Google Pixel Watch.",
+  },
+  {
+    id: "november",
+    author: "Firstname Lastname",
+    title: "Test Article",
+    desc: "Test description.",
+    month: "December",
+    m: "22",
+    day: "10",
+    year: "2022",
+    alt: "Alt text.",
+    hover: "Title text.",
   },
 ];
 
