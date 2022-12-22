@@ -201,6 +201,19 @@ function articleBox(n) {
 
 const big = [
   // for article lists
+
+  {
+    id: "november",
+    author: "Firstname Lastname",
+    title: "Test Article",
+    desc: "Test description.",
+    month: "December",
+    m: "11",
+    day: "10",
+    year: "2022",
+    alt: "Alt text.",
+    hover: "Title text.",
+  },
   {
     id: "ios16",
     author: "Matthew Nudelman",
@@ -237,18 +250,6 @@ const big = [
     year: "2022",
     alt: "The Google Pixel Watch.",
     hover: "The first Google Pixel Watch.",
-  },
-  {
-    id: "november",
-    author: "Firstname Lastname",
-    title: "Test Article",
-    desc: "Test description.",
-    month: "December",
-    m: "11",
-    day: "10",
-    year: "2022",
-    alt: "Alt text.",
-    hover: "Title text.",
   },
 ];
 
@@ -321,9 +322,10 @@ const big = [
 
 ARTICLE INDICES -- (EACH NEW ARTICLE IS THE NEXT ONE)
 
-0 : ios16.html
-1 : ipad10.html
-2 : pixelwatch.html
+0 : november.html [tester]
+1 : ios16.html
+2 : ipad10.html
+3 : pixelwatch.html
 
 
 */
