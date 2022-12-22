@@ -210,8 +210,11 @@ function tagBox() {
   for (let i = 0; i < tags.length; i++) {
     const link = document.createElement("a");
     link.href = "/tags/" + tags[i].id + "/";
+    listTags.appendChild(link);
     const item = document.createElement("li");
+    
     item.innerText = tags[i].title + "(" + tags[i].amt + ")";
+    link.appendChild(item);
   }
 }
 /* <h4>Tags</h4>
