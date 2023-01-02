@@ -61,12 +61,12 @@ function setMonth(f) {
   }
 }
 
-function dateFill(e, year) {
+function dateFill(e) {
   document.getElementById("date").innerHTML =
-    setMonth(getFolder()) + " " + dates[e] + ", " + year;
+    setMonth(getFolder()) + " " + big[e].day + ", " + big[e].year;
 }
 
-const dates = [30, 3, 10]; // using
+const dates = [30, 3, 10, 2]; // using
 
 const dates2 = [
   // not using
@@ -282,6 +282,18 @@ const big = [
     year: "2022",
     alt: "The Google Pixel Watch.",
     hover: "The first Google Pixel Watch.",
+  }, 
+  {
+    id: "applewatchstress",
+    author: "Matthew Nudelman",
+    title: "Apple Watch Stress Tracking",
+    desc: "Recent studies have found that the heart rate monitor of the Apple Watch is precise enough for stress tracking.",
+    month: "January",
+    m: "1",
+    day: "2",
+    year: "2023",
+    alt: "Apple Watch.",
+    hover: "Apple Watch.",
   },
 ];
 
@@ -358,6 +370,7 @@ ARTICLE INDICES -- (EACH NEW ARTICLE IS THE NEXT ONE)
 1 : ios16.html
 2 : ipad10.html
 3 : pixelwatch.html
+4 : applewatchstress.html
 
 
 */
