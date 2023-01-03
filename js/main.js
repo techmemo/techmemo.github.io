@@ -199,6 +199,12 @@ function articleBox(n) {
   colb.appendChild(bigDesc);
 }
 
+const tags = [
+  { id: "apple", amt: "3", text: "Apple" },
+  { id: "software", amt: "1", text: "Software" },
+  { id: "google", amt: "1", text: "Google" },
+];
+
 function tagBox() {
   let lineBreak = document.createElement("br");
   let listTags = document.createElement("ul");
@@ -217,10 +223,10 @@ function tagBox() {
   }
 }
 
-const tags = [
-  { id: "apple", amt: "3", text: "Apple" },
-  { id: "software", amt: "1", text: "Software" },
-  { id: "google", amt: "1", text: "Google" },
+const months = [
+  { y: "2022", m: "11", amt: "1", text: "November" },
+  { y: "2022", m: "12", amt: "2", text: "December" },
+  { y: "2023", m: "1", amt: "1", text: "January" },
 ];
 
 function monthBox() {
@@ -240,12 +246,6 @@ function monthBox() {
     link.appendChild(item);
   }
 }
-
-const months = [
-  { y: "2022", m: "11", amt: "1", text: "November" },
-  { y: "2022", m: "12", amt: "2", text: "December" },
-  { y: "2023", m: "1", amt: "1", text: "January" },
-];
 
 /* <h4>Tags</h4>
             <br />
