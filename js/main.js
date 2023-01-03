@@ -203,8 +203,6 @@ function tagBox() {
   let tagTitle = document.createElement("h4");
   let listTags = document.createElement("ul");
 
-  document.getElementById("tagbox").appendChild(tagTitle);
-  document.getElementById("tagbox").appendChild(document.createElement("br"));
   document.getElementById("tagbox").appendChild(listTags);
 
   for (let i = 0; i < tags.length; i++) {
@@ -222,6 +220,27 @@ const tags = [
   { id: "apple", amt: "3", text: "Apple" },
   { id: "software", amt: "1", text: "Software" },
   { id: "google", amt: "1", text: "Google" },
+];
+
+function dirBox() {
+  let dirTitle = document.createElement("h4");
+  let listDirs = document.createElement("ul");
+
+  for (let i = 0; i < months.length; i++) {
+    const link = document.createElement("a");
+    link.href = "/" + months[i].y + "/" + months[i].m + "/";
+    listTags.appendChild(link);
+    const item = document.createElement("li");
+
+    item.innerText = months[i].text + months[i].y;
+    link.appendChild(item);
+  }
+}
+
+const months = [
+  { y: "2022", m: "11", amt: "1", text: "November" },
+  { y: "2022", m: "12", amt: "2", text: "December" },
+  { y: "2023", m: "1", amt: "1", text: "January" },
 ];
 
 /* <h4>Tags</h4>
