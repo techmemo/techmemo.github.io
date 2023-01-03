@@ -212,11 +212,18 @@ function tagBox() {
     link.href = "/tags/" + tags[i].id + "/";
     listTags.appendChild(link);
     const item = document.createElement("li");
-    
-    item.innerText = tags[i].title + "(" + tags[i].amt + ")";
+
+    item.innerText = tags[i].text + " (" + tags[i].amt + ")";
     link.appendChild(item);
   }
 }
+
+const tags = [
+  { id: "apple", amt: "3", text: "Apple" },
+  { id: "software", amt: "1", text: "Software" },
+  { id: "google", amt: "1", text: "Google" },
+];
+
 /* <h4>Tags</h4>
             <br />
             <ul>
@@ -224,12 +231,6 @@ function tagBox() {
               <a href="tags/software/"><li>Software (1)</li></a>
               <a href="tags/google/"><li>Google (1)</li></a>
             </ul> */
-
-const tags = [
-  { id: "apple", amt: "2", title: "Apple" },
-  { id: "software", amt: "1", title: "Software" },
-  { id: "google", amt: "1", title: "Google" },
-];
 
 const big = [
   // for article lists
@@ -282,7 +283,7 @@ const big = [
     year: "2022",
     alt: "The Google Pixel Watch.",
     hover: "The first Google Pixel Watch.",
-  }, 
+  },
   {
     id: "applewatchstress",
     author: "Matthew Nudelman",
