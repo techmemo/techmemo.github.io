@@ -200,9 +200,10 @@ function articleBox(n) {
 }
 
 function tagBox() {
-  let tagTitle = document.createElement("h4");
+  let lineBreak = document.createElement("br");
   let listTags = document.createElement("ul");
 
+  document.getElementById("tagbox").appendChild(lineBreak);
   document.getElementById("tagbox").appendChild(listTags);
 
   for (let i = 0; i < tags.length; i++) {
@@ -222,17 +223,20 @@ const tags = [
   { id: "google", amt: "1", text: "Google" },
 ];
 
-function dirBox() {
-  let dirTitle = document.createElement("h4");
+function monthBox() {
+  let lineBreak = document.createElement("br");
   let listDirs = document.createElement("ul");
+
+  document.getElementById("monthbox").appendChild(lineBreak);
+  document.getElementById("monthbox").appendChild(listDirs);
 
   for (let i = 0; i < months.length; i++) {
     const link = document.createElement("a");
     link.href = "/" + months[i].y + "/" + months[i].m + "/";
-    listTags.appendChild(link);
+    listDirs.appendChild(link);
     const item = document.createElement("li");
 
-    item.innerText = months[i].text + months[i].y;
+    item.innerText = months[i].text + " " + months[i].y;
     link.appendChild(item);
   }
 }
