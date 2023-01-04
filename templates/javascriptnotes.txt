@@ -26,7 +26,7 @@ automatically place article in tag page
 
 how would a property of an object contain multiple items
 
-	- tag property, each separated by a comma?
+	- tag property, each separated by a slash?
 	- use split function to make an array when needed for a function
 	- get tags from function
 	

@@ -282,6 +282,7 @@ const big = [
     alt: "An icon with the number 16 representing iOS 16, the newest version of iOS.",
     hover:
       "An icon with the number 16 representing iOS 16, the newest version of iOS.",
+    tags: "apple software",
   },
   {
     id: "ipad10",
@@ -334,60 +335,22 @@ function timedList() {
 
   for (let n = big.length - 1; n > 0; n--) {
     if (big[n].m == folder) {
-      let bigLink = document.createElement("a");
-      bigLink.href =
-        "/" + big[n].year + "/" + big[n].m + "/" + big[n].id + ".html";
-      document.getElementById("big-list").appendChild(bigLink);
+      articleBox(n);
+    }
+  }
+}
 
-      let bigArticle = document.createElement("div");
-      bigArticle.classList = "big-article";
-      bigLink.appendChild(bigArticle);
+function taggedList() {
+  var loc = window.location.pathname.split("/");
 
-      let row = document.createElement("div");
-      row.classList = "row";
-      bigArticle.appendChild(row);
+  var folder = loc[loc.length - 2];
 
-      let cola = document.createElement("div");
-      cola.classList = "col-lg-2 col-sm-3";
-      row.appendChild(cola);
-
-      let imgFrame = document.createElement("div");
-      imgFrame.classList = "big-frame";
-      cola.appendChild(imgFrame);
-
-      let image = document.createElement("img");
-      image.src = "/img/" + big[n].id + ".png";
-      image.classList = "new-img";
-      image.alt = big[n].alt;
-      image.title = big[n].hover;
-      imgFrame.appendChild(image);
-
-      let colb = document.createElement("div");
-      colb.classList = "col-sm-10";
-      row.appendChild(colb);
-
-      let bigTitle = document.createElement("h3");
-      bigTitle.innerText = big[n].title;
-      colb.appendChild(bigTitle);
-
-      const bigDate = document.createElement("h5");
-      bigDate.innerText =
-        "by " +
-        big[n].author +
-        " - " +
-        big[n].month +
-        " " +
-        big[n].day +
-        ", " +
-        big[n].year;
-      colb.appendChild(bigDate);
-
-      const lineBreak = document.createElement("br");
-      colb.appendChild(lineBreak);
-
-      const bigDesc = document.createElement("p");
-      bigDesc.innerText = big[n].desc;
-      colb.appendChild(bigDesc);
+  for (let n = big.length - 1; n > 0; n--) {
+    var thisTags = big[n].tags.split(" ");
+    for (let t = 0; t < thisTags.length; t++) {
+      if (thisTags[t] == folder) {
+        articleBox(n);
+      }
     }
   }
 }
