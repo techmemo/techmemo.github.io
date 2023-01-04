@@ -5,5 +5,5 @@
         - All information is from main.js, editing pages to add a tag to the list is no longer needed
 
 01-04-2023 :
-    - Newest page updates AUTOMATICALLY!!!
-    - Tag and month pages in development??
+    - Newest and ALL MONTH PAGES update AUTOMATICALLY!!!
+    - Tag pages may have this in the future

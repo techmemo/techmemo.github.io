@@ -20,7 +20,18 @@ javascript to build tagbox [DONE]
 
 javascript function to automatically place an article in the Newest page (would likely require rewriting article box system) [DONE] [DID NOT REQUIRE REWRITING THE ARTICLE BOX SYSTEM]
 
-javascript function for: automatically place article in month page ; automatically place article in tag page 
+javascript function for: automatically place article in month page [DONE] ; 
+
+automatically place article in tag page 
+
+how would a property of an object contain multiple items
+
+	- tag property, each separated by a comma?
+	- use split function to make an array when needed for a function
+	- get tags from function
+	
+	for tag page: 
+		- for loop run through array of tags on each article (*nested for loop* moment)
 
 topics can be manual because they are easier to update
 
