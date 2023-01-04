@@ -1,0 +1,9 @@
+01-03-2023 :
+    - JavaScript is now used for the Month Directory and Tag boxes for easier consistency across pages
+    - New entries can be created by editing the arrays in main.js
+        - Changes are reflected on the page automatically
+        - All information is from main.js, editing pages to add a tag to the list is no longer needed
+
+01-04-2023 :
+    - Newest page updates AUTOMATICALLY!!!
+    - Tag and month pages in development??
