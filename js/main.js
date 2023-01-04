@@ -199,6 +199,128 @@ function articleBox(n) {
   colb.appendChild(bigDesc);
 }
 
+const tags = [
+  { id: "apple", amt: "3", text: "Apple" },
+  { id: "software", amt: "1", text: "Software" },
+  { id: "google", amt: "1", text: "Google" },
+];
+
+function tagBox() {
+  let lineBreak = document.createElement("br");
+  let listTags = document.createElement("ul");
+
+  document.getElementById("tagbox").appendChild(lineBreak);
+  document.getElementById("tagbox").appendChild(listTags);
+
+  for (let i = 0; i < tags.length; i++) {
+    const link = document.createElement("a");
+    link.href = "/tags/" + tags[i].id + "/";
+    listTags.appendChild(link);
+    const item = document.createElement("li");
+
+    item.innerText = tags[i].text + " (" + tags[i].amt + ")";
+    link.appendChild(item);
+  }
+}
+
+const months = [
+  { y: "2022", m: "11", amt: "1", text: "November" },
+  { y: "2022", m: "12", amt: "2", text: "December" },
+  { y: "2023", m: "1", amt: "1", text: "January" },
+];
+
+function monthBox() {
+  let lineBreak = document.createElement("br");
+  let listDirs = document.createElement("ul");
+
+  document.getElementById("monthbox").appendChild(lineBreak);
+  document.getElementById("monthbox").appendChild(listDirs);
+
+  for (let i = 0; i < months.length; i++) {
+    const link = document.createElement("a");
+    link.href = "/" + months[i].y + "/" + months[i].m + "/";
+    listDirs.appendChild(link);
+    const item = document.createElement("li");
+
+    item.innerText = months[i].text + " " + months[i].y;
+    link.appendChild(item);
+  }
+}
+
+/* <h4>Tags</h4>
+            <br />
+            <ul>
+              <a href="tags/apple/"><li>Apple (2)</li></a>
+              <a href="tags/software/"><li>Software (1)</li></a>
+              <a href="tags/google/"><li>Google (1)</li></a>
+            </ul> */
+
+const big = [
+  // for article lists
+
+  {
+    id: "november",
+    author: "Firstname Lastname",
+    title: "Test Article",
+    desc: "Test description.",
+    month: "December",
+    m: "11",
+    day: "10",
+    year: "2022",
+    alt: "Alt text.",
+    hover: "Title text.",
+  },
+  {
+    id: "ios16",
+    author: "Matthew Nudelman",
+    title: "iOS 16 - Major Features and Future Updates",
+    desc: "This fall, users of Apple devices can expect several updates to iOS including features both new and previously-announced.",
+    month: "November",
+    m: "11",
+    day: "30",
+    year: "2022",
+    alt: "An icon with the number 16 representing iOS 16, the newest version of iOS.",
+    hover:
+      "An icon with the number 16 representing iOS 16, the newest version of iOS.",
+  },
+  {
+    id: "ipad10",
+    author: "Matthew Nudelman",
+    title: "iPad 10 - The End of the Lightning Port",
+    desc: "Apple recently announced a redesigned 10th-generation iPad, making the 9th-generation iPad the last to include built-in Lightning connectivity. However, the connector is not yet gone from the iPad...",
+    month: "December",
+    m: "12",
+    day: "3",
+    year: "2022",
+    alt: "The 10th-generation iPad.",
+    hover: "The 10th-generation iPad.",
+  },
+  {
+    id: "pixelwatch",
+    author: "Matthew Nudelman",
+    title: "Google Pixel Watch",
+    desc: "Google recently entered the smartwatch game, leaving many to wonder how they intend to compete with Apple and Samsung on wearable technology.",
+    month: "December",
+    m: "12",
+    day: "10",
+    year: "2022",
+    alt: "The Google Pixel Watch.",
+    hover: "The first Google Pixel Watch.",
+  },
+  {
+    id: "applewatchstress",
+    author: "Matthew Nudelman",
+    title: "Apple Watch Stress Tracking",
+    desc: "Recent studies have found that the heart rate monitor of the Apple Watch is precise enough for stress tracking.",
+    month: "January",
+    m: "1",
+    day: "2",
+    year: "2023",
+    alt: "Apple Watch.",
+    hover: "Apple Watch.",
+  },
+];
+
 function newestList() {
   for (let n = big.length - 1; n > 0; n--) {
     let bigLink = document.createElement("a");
@@ -322,128 +444,6 @@ function timedList() {
     }
   }
 }
-
-const tags = [
-  { id: "apple", amt: "3", text: "Apple" },
-  { id: "software", amt: "1", text: "Software" },
-  { id: "google", amt: "1", text: "Google" },
-];
-
-function tagBox() {
-  let lineBreak = document.createElement("br");
-  let listTags = document.createElement("ul");
-
-  document.getElementById("tagbox").appendChild(lineBreak);
-  document.getElementById("tagbox").appendChild(listTags);
-
-  for (let i = 0; i < tags.length; i++) {
-    const link = document.createElement("a");
-    link.href = "/tags/" + tags[i].id + "/";
-    listTags.appendChild(link);
-    const item = document.createElement("li");
-
-    item.innerText = tags[i].text + " (" + tags[i].amt + ")";
-    link.appendChild(item);
-  }
-}
-
-const months = [
-  { y: "2022", m: "11", amt: "1", text: "November" },
-  { y: "2022", m: "12", amt: "2", text: "December" },
-  { y: "2023", m: "1", amt: "1", text: "January" },
-];
-
-function monthBox() {
-  let lineBreak = document.createElement("br");
-  let listDirs = document.createElement("ul");
-
-  document.getElementById("monthbox").appendChild(lineBreak);
-  document.getElementById("monthbox").appendChild(listDirs);
-
-  for (let i = 0; i < months.length; i++) {
-    const link = document.createElement("a");
-    link.href = "/" + months[i].y + "/" + months[i].m + "/";
-    listDirs.appendChild(link);
-    const item = document.createElement("li");
-
-    item.innerText = months[i].text + " " + months[i].y;
-    link.appendChild(item);
-  }
-}
-
-/* <h4>Tags</h4>
-            <br />
-            <ul>
-              <a href="tags/apple/"><li>Apple (2)</li></a>
-              <a href="tags/software/"><li>Software (1)</li></a>
-              <a href="tags/google/"><li>Google (1)</li></a>
-            </ul> */
-
-const big = [
-  // for article lists
-
-  {
-    id: "november",
-    author: "Firstname Lastname",
-    title: "Test Article",
-    desc: "Test description.",
-    month: "December",
-    m: "11",
-    day: "10",
-    year: "2022",
-    alt: "Alt text.",
-    hover: "Title text.",
-  },
-  {
-    id: "ios16",
-    author: "Matthew Nudelman",
-    title: "iOS 16 - Major Features and Future Updates",
-    desc: "This fall, users of Apple devices can expect several updates to iOS including features both new and previously-announced.",
-    month: "November",
-    m: "11",
-    day: "30",
-    year: "2022",
-    alt: "An icon with the number 16 representing iOS 16, the newest version of iOS.",
-    hover:
-      "An icon with the number 16 representing iOS 16, the newest version of iOS.",
-  },
-  {
-    id: "ipad10",
-    author: "Matthew Nudelman",
-    title: "iPad 10 - The End of the Lightning Port",
-    desc: "Apple recently announced a redesigned 10th-generation iPad, making the 9th-generation iPad the last to include built-in Lightning connectivity. However, the connector is not yet gone from the iPad...",
-    month: "December",
-    m: "12",
-    day: "3",
-    year: "2022",
-    alt: "The 10th-generation iPad.",
-    hover: "The 10th-generation iPad.",
-  },
-  {
-    id: "pixelwatch",
-    author: "Matthew Nudelman",
-    title: "Google Pixel Watch",
-    desc: "Google recently entered the smartwatch game, leaving many to wonder how they intend to compete with Apple and Samsung on wearable technology.",
-    month: "December",
-    m: "12",
-    day: "10",
-    year: "2022",
-    alt: "The Google Pixel Watch.",
-    hover: "The first Google Pixel Watch.",
-  },
-  {
-    id: "applewatchstress",
-    author: "Matthew Nudelman",
-    title: "Apple Watch Stress Tracking",
-    desc: "Recent studies have found that the heart rate monitor of the Apple Watch is precise enough for stress tracking.",
-    month: "January",
-    m: "1",
-    day: "2",
-    year: "2023",
-    alt: "Apple Watch.",
-    hover: "Apple Watch.",
-  },
-];
 
 /* function newArtB(n) {
   document.getElementById("big-" + big[n].id).innerHTML =
