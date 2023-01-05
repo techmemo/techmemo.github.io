@@ -295,6 +295,7 @@ const big = [
     year: "2022",
     alt: "The 10th-generation iPad.",
     hover: "The 10th-generation iPad.",
+    tags: "apple",
   },
   {
     id: "pixelwatch",
@@ -307,6 +308,7 @@ const big = [
     year: "2022",
     alt: "The Google Pixel Watch.",
     hover: "The first Google Pixel Watch.",
+    tags: "google",
   },
   {
     id: "applewatchstress",
@@ -319,6 +321,7 @@ const big = [
     year: "2023",
     alt: "Apple Watch.",
     hover: "Apple Watch.",
+    tags: "apple",
   },
 ];
 
@@ -351,6 +354,20 @@ function taggedList() {
       if (thisTags[t] == folder) {
         articleBox(n);
       }
+    }
+  }
+}
+
+function topicList() {
+  var loc = window.location.pathname.split("/");
+
+  var folder = loc[loc.length - 2];
+
+  for (let n = big.length - 1; n > 0; n--) {
+    var thisTopic = big[n].topic;
+    if (thisTopic == folder) {
+        articleBox(n);
+    }
     }
   }
 }
