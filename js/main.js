@@ -269,6 +269,8 @@ const big = [
     year: "2022",
     alt: "Alt text.",
     hover: "Title text.",
+    tags: "",
+    topic: "",
   },
   {
     id: "ios16",
@@ -283,6 +285,7 @@ const big = [
     hover:
       "An icon with the number 16 representing iOS 16, the newest version of iOS.",
     tags: "apple software",
+    topic: "phones"
   },
   {
     id: "ipad10",
@@ -296,6 +299,7 @@ const big = [
     alt: "The 10th-generation iPad.",
     hover: "The 10th-generation iPad.",
     tags: "apple",
+    topic: "tablets"
   },
   {
     id: "pixelwatch",
@@ -309,6 +313,7 @@ const big = [
     alt: "The Google Pixel Watch.",
     hover: "The first Google Pixel Watch.",
     tags: "google",
+    topic: "wearables"
   },
   {
     id: "applewatchstress",
@@ -322,6 +327,7 @@ const big = [
     alt: "Apple Watch.",
     hover: "Apple Watch.",
     tags: "apple",
+    topic: "wearables"
   },
 ];
 
@@ -367,7 +373,6 @@ function topicList() {
     var thisTopic = big[n].topic;
     if (thisTopic == folder) {
         articleBox(n);
-    }
     }
   }
 }
