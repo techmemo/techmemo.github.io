@@ -7,3 +7,7 @@
 01-04-2023 :
     - Newest and ALL MONTH PAGES update AUTOMATICALLY!!!
     - Tag pages may have this in the future
+
+01-09-2023 : 
+    - Tag and Topic pages update automatically
+    - Google Analytics is now active
