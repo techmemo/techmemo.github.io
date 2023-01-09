@@ -35,6 +35,8 @@ how would a property of an object contain multiple items [works]
 
 topics can be manual because they are easier to update [jk they're automated now]
 
+automate home page boxes
+
 
 LONG TERM GOAL: 
 Learn to build a system for publishing articles without needing to do it in the HTML?!
