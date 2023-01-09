@@ -285,7 +285,7 @@ const big = [
     hover:
       "An icon with the number 16 representing iOS 16, the newest version of iOS.",
     tags: "apple software",
-    topic: "phones"
+    topic: "phones",
   },
   {
     id: "ipad10",
@@ -299,7 +299,7 @@ const big = [
     alt: "The 10th-generation iPad.",
     hover: "The 10th-generation iPad.",
     tags: "apple",
-    topic: "tablets"
+    topic: "tablets",
   },
   {
     id: "pixelwatch",
@@ -313,7 +313,7 @@ const big = [
     alt: "The Google Pixel Watch.",
     hover: "The first Google Pixel Watch.",
     tags: "google",
-    topic: "wearables"
+    topic: "wearables",
   },
   {
     id: "applewatchstress",
@@ -327,7 +327,7 @@ const big = [
     alt: "Apple Watch.",
     hover: "Apple Watch.",
     tags: "apple",
-    topic: "wearables"
+    topic: "wearables",
   },
 ];
 
@@ -367,12 +367,12 @@ function taggedList() {
 function topicList() {
   var loc = window.location.pathname.split("/");
 
-  var folder = loc[loc.length - 2];
+  var folder = loc[loc.length - 1];
 
   for (let n = big.length - 1; n > 0; n--) {
     var thisTopic = big[n].topic;
-    if (thisTopic == folder) {
-        articleBox(n);
+    if (thisTopic + ".html" == folder) {
+      articleBox(n);
     }
   }
 }

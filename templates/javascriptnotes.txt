@@ -22,18 +22,18 @@ javascript function to automatically place an article in the Newest page (would 
 
 javascript function for: automatically place article in month page [DONE] ; 
 
-automatically place article in tag page 
+automatically place article in tag page [DONE]
 
-how would a property of an object contain multiple items
+how would a property of an object contain multiple items [works]
 
-	- tag property, each separated by a slash?
+	- tags property, each separated by a space
 	- use split function to make an array when needed for a function
 	- get tags from function
 	
 	for tag page: 
 		- for loop run through array of tags on each article (*nested for loop* moment)
 
-topics can be manual because they are easier to update
+topics can be manual because they are easier to update [jk they're automated now]
 
 
 LONG TERM GOAL: 
