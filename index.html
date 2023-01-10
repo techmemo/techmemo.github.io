@@ -21,7 +21,9 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-    <!-- Google tag (gtag.js) -->
+    
+  </head>
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0S8SMB69H"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -30,8 +32,6 @@
 
   gtag('config', 'G-Z0S8SMB69H');
 </script>
-  </head>
-
   <body>
     <div class="container">
       <div class="row page-header">
@@ -80,51 +80,13 @@
       </div>
       <div class="row"></div>
     </div>
-    <div class="container container-grid">
-      <a href="2022/11/ios16.html"
-        ><div class="home-article">
-          <img
-            class="home-img"
-            src="img/ios16.png"
-            alt="An icon with the number 16 representing iOS 16, the newest version of iOS."
-            title="An icon with the number 16 representing iOS 16, the newest version of iOS."
-          />
-          <h2 class="home-title">iOS 16 - Features and Updates</h2>
-        </div>
-      </a>
-      <a href="2022/12/ipad10.html"
-        ><div class="home-article">
-          <img
-            class="home-img"
-            src="img/ipad10.png"
-            alt="The 10th-generation iPad."
-            title="The 10th-generation iPad."
-          />
-          <h2 class="home-title">iPad 10</h2>
-        </div>
-      </a>
-      <a href="2022/12/pixelwatch.html"
-        ><div class="home-article">
-          <img
-            class="home-img"
-            src="img/pixelwatch.png"
-            alt="The Google Pixel Watch."
-            title="The first Google Pixel Watch."
-          />
-          <h2 class="home-title">Google Pixel Watch</h2>
-        </div>
-      </a>
-      <a href="2023/1/applewatchstress.html"
-        ><div class="home-article">
-          <img
-            class="home-img"
-            src="img/applewatchstress.png"
-            alt="Apple Watch."
-            title="Apple Watch."
-          />
-          <h2 class="home-title">Apple Watch Stress Tracking</h2>
-        </div>
-      </a>
+    <div class="container container-grid" id="homebox">
+      <script>
+        homeBox(1);
+        homeBox(2);
+        homeBox(3);
+        homeBox(4);
+      </script>
     <hr />
   </body>
 </html>

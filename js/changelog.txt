@@ -11,3 +11,6 @@
 01-09-2023 : 
     - Tag and Topic pages update automatically
     - Google Analytics is now active
+
+01-10-2023 :
+    - Home page boxes are automated

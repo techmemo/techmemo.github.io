@@ -33,9 +33,9 @@ how would a property of an object contain multiple items [works]
 	for tag page: 
 		- for loop run through array of tags on each article (*nested for loop* moment)
 
-topics can be manual because they are easier to update [jk they're automated now]
+topics can be manual because they are easier to update [jk]
 
-automate home page boxes
+automate home page boxes [DONE]
 
 
 LONG TERM GOAL: 

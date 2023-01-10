@@ -262,6 +262,7 @@ const big = [
     id: "november",
     author: "Firstname Lastname",
     title: "Test Article",
+    label: "november",
     desc: "Test description.",
     month: "December",
     m: "11",
@@ -276,6 +277,7 @@ const big = [
     id: "ios16",
     author: "Matthew Nudelman",
     title: "iOS 16 - Major Features and Future Updates",
+    label: "iOS 16 - Features and Updates",
     desc: "This fall, users of Apple devices can expect several updates to iOS including features both new and previously-announced.",
     month: "November",
     m: "11",
@@ -291,6 +293,7 @@ const big = [
     id: "ipad10",
     author: "Matthew Nudelman",
     title: "iPad 10 - The End of the Lightning Port",
+    label: "iPad 10",
     desc: "Apple recently announced a redesigned 10th-generation iPad, making the 9th-generation iPad the last to include built-in Lightning connectivity. However, the connector is not yet gone from the iPad...",
     month: "December",
     m: "12",
@@ -305,6 +308,7 @@ const big = [
     id: "pixelwatch",
     author: "Matthew Nudelman",
     title: "Google Pixel Watch",
+    label: "Google Pixel Watch",
     desc: "Google recently entered the smartwatch game, leaving many to wonder how they intend to compete with Apple and Samsung on wearable technology.",
     month: "December",
     m: "12",
@@ -319,6 +323,7 @@ const big = [
     id: "applewatchstress",
     author: "Matthew Nudelman",
     title: "Apple Watch Stress Tracking",
+    label: "Apple Watch Stress Tracking",
     desc: "Recent studies have found that the heart rate monitor of the Apple Watch is precise enough for stress tracking.",
     month: "January",
     m: "1",
@@ -330,6 +335,41 @@ const big = [
     topic: "wearables",
   },
 ];
+
+function homeBox(n) {
+  let homeLink = document.createElement("a");
+  homeLink.href =
+    "/" + big[n].year + "/" + big[n].m + "/" + big[n].id + ".html";
+  document.getElementById("homebox").appendChild(homeLink);
+
+  let homeDiv = document.createElement("div");
+  homeDiv.classList = "home-article";
+  homeLink.appendChild(homeDiv);
+
+  let homeImg = document.createElement("img");
+  homeImg.classList = "home-img";
+  homeImg.src = "/img/" + big[n].id + ".png";
+  homeImg.alt = big[n].alt;
+  homeImg.title = big[n].hover;
+  homeDiv.appendChild(homeImg);
+
+  let homeText = document.createElement("h2");
+  homeText.classList = "home-title";
+  homeText.innerText = big[n].label;
+  homeDiv.appendChild(homeText);
+}
+
+/** <a href="2022/11/ios16.html"
+        ><div class="home-article">
+          <img
+            class="home-img"
+            src="img/ios16.png"
+            alt="An icon with the number 16 representing iOS 16, the newest version of iOS."
+            title="An icon with the number 16 representing iOS 16, the newest version of iOS."
+          />
+          <h2 class="home-title">iOS 16 - Features and Updates</h2>
+        </div>
+      </a> **/
 
 function newestList() {
   for (let n = big.length - 1; n > 0; n--) {
