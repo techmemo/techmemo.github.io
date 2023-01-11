@@ -14,3 +14,6 @@
 
 01-10-2023 :
     - Home page boxes are automated
+
+01-11-2023 :
+    - Article pages "Tags on this" box is fully automated based on current page

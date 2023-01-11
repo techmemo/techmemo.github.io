@@ -336,6 +336,55 @@ const big = [
   },
 ];
 
+function tagList() {
+  let boxTitle = document.createElement("h4");
+  boxTitle.innerText = "Tags on this";
+  let lineBreak = document.createElement("br");
+  let listTags = document.createElement("ul");
+
+  document.getElementById("tagbox").appendChild(boxTitle);
+  document.getElementById("tagbox").appendChild(lineBreak);
+  document.getElementById("tagbox").appendChild(listTags);
+
+  var loc = window.location.pathname.split("/");
+
+  var thisArticle = loc[loc.length - 1];
+
+  var n = 0;
+  for (let h = 1; h < big.length; h++) {
+    if (big[h].id + ".html" == thisArticle) {
+      n = h;
+      break;
+    }
+  }
+
+  var thisTags = big[n].tags.split(" ");
+
+  for (let i = 0; i < thisTags.length; i++) {
+    const link = document.createElement("a");
+    link.href = "/tags/" + thisTags[i] + "/";
+    listTags.appendChild(link);
+    const item = document.createElement("li");
+
+    for (let j = 0; j < tags.length; j++) {
+      if (thisTags[i] == tags[j].id) {
+        item.innerText = tags[j].text;
+      }
+    }
+
+    link.appendChild(item);
+  }
+}
+
+/**<div class="directory">
+            <h4>Tags on this</h4>
+            <br />
+            <ul>
+              <a href="/tags/apple/"><li>Apple</li></a>
+              <a href="/tags/software/"><li>Software</li></a>
+            </ul>
+          </div> */
+
 function homeBox(n) {
   let homeLink = document.createElement("a");
   homeLink.href =

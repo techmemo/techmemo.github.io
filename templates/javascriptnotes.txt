@@ -37,6 +37,8 @@ topics can be manual because they are easier to update [jk]
 
 automate home page boxes [DONE]
 
+automatically build box of tags on article page based on big array
+
 
 LONG TERM GOAL: 
 Learn to build a system for publishing articles without needing to do it in the HTML?!

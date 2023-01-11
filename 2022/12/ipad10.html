@@ -81,6 +81,15 @@
                 </ul>
               </div>
             </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/js/changelog.txt"
+                target="_blank"
+                ><b><i>Update Log</i></b></a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -184,12 +193,10 @@
               monthBox();
             </script>
           </div>
-          <div class="directory">
-            <h4>Tags on this</h4>
-            <br />
-            <ul>
-              <a href="/tags/apple/"><li>Apple</li></a>
-            </ul>
+          <div class="directory" id="tagbox">
+            <script>
+              tagList();
+            </script>
           </div>
           <div class="directory references">
             <h4>References</h4>
