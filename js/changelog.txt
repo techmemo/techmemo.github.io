@@ -17,3 +17,6 @@
 
 01-11-2023 :
     - Article pages "Tags on this" box is fully automated based on current page
+
+01-13-2023 :
+    - Article lists now display each article's individual tags

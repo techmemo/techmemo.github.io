@@ -197,6 +197,22 @@ function articleBox(n) {
   const bigDesc = document.createElement("p");
   bigDesc.innerText = big[n].desc;
   colb.appendChild(bigDesc);
+
+  let tagsList = document.createElement("p");
+  tagsList.style.fontWeight = "bold";
+  colb.appendChild(tagsList);
+
+  let tagsText = "<i>Tags: </i>";
+
+  var thisTags = big[n].tags.split(" ");
+
+  let tagFlat = thisTags[0];
+
+  for (let i = 1; i < thisTags.length; i++) {
+    tagFlat += ", " + thisTags[i];
+  }
+
+  tagsList.innerHTML = tagsText + tagFlat;
 }
 
 const tags = [
