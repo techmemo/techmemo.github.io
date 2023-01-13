@@ -209,7 +209,8 @@ function articleBox(n) {
   let tagFlat = thisTags[0];
 
   for (let i = 1; i < thisTags.length; i++) {
-    tagFlat += ", " + thisTags[i];
+    tagFlat +=
+      ", " + '<a href="/tags/' + thisTags[i] + '/">' + thisTags[i] + "</a>";
   }
 
   tagsList.innerHTML = tagsText + tagFlat;
