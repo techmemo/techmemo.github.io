@@ -66,7 +66,7 @@ function dateFill(e) {
     setMonth(getFolder()) + " " + big[e].day + ", " + big[e].year;
 }
 
-const dates = [30, 3, 10, 2]; // using
+const dates = [30, 3, 10, 2, 17]; // possibly not using?
 
 const dates2 = [
   // not using
@@ -220,6 +220,8 @@ const tags = [
   { id: "apple", amt: "3", text: "Apple" },
   { id: "software", amt: "1", text: "Software" },
   { id: "google", amt: "1", text: "Google" },
+  { id: "laptop", amt: "1", text: "Laptop" },
+  { id: "computer", amt: "1", text: "Computer" },
 ];
 
 function tagBox() {
@@ -350,6 +352,21 @@ const big = [
     hover: "Apple Watch.",
     tags: "apple",
     topic: "wearables",
+  },
+  {
+    id: "macbookpro",
+    author: "Matthew Nudelman",
+    title: "New MacBook Pro with M2 Pro and M2 Max Announced",
+    label: "M2 Pro + M2 Max MacBook Pro",
+    desc: "Just today, Apple announced the newest MacBook Pro featuring the M2 Pro and M2 Max chips.",
+    month: "January",
+    m: "1",
+    day: "17",
+    year: "2023",
+    alt: "MacBook Pro (2023)",
+    hover: "MacBook Pro (2023)",
+    tags: "apple laptop computer",
+    topic: "",
   },
 ];
 
@@ -557,6 +574,7 @@ ARTICLE INDICES -- (EACH NEW ARTICLE IS THE NEXT ONE)
 2 : ipad10.html
 3 : pixelwatch.html
 4 : applewatchstress.html
+5 : macbookpro.html
 
 
 */

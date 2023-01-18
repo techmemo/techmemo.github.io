@@ -83,7 +83,11 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/js/changelog.txt" target="_blank"
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/js/changelog.txt"
+                target="_blank"
                 ><b><i>Update Log</i></b></a
               >
             </li>
@@ -120,14 +124,13 @@
           <div class="directory" id="monthbox">
             <h4>Directory</h4>
             <script>
-            monthBox();
+              monthBox();
             </script>
-          <div class="directory">
-            <h4>Tags on this</h4>
-            <br />
-            <ul>
-              <a href="[tag link]"><li>tag</li></a>
-            </ul>
+          </div>
+          <div class="directory" id="tagbox">
+            <script>
+              tagList();
+            </script>
           </div>
           <div class="directory references">
             <h4>References</h4>
@@ -143,7 +146,7 @@
     </div>
     <hr />
     <script>
-      dateFill(number, 2022);
+      dateFill(n);
     </script>
   </body>
 </html>
