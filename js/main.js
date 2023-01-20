@@ -358,7 +358,7 @@ const big = [
     author: "Matthew Nudelman",
     title: "New MacBook Pro with M2 Pro and M2 Max Announced",
     label: "M2 Pro + M2 Max MacBook Pro",
-    desc: "Just today, Apple announced the newest MacBook Pro featuring the M2 Pro and M2 Max chips.",
+    desc: "Just today, Apple announced the newest MacBook Pro featuring the M2 Pro and M2 Max.",
     month: "January",
     m: "1",
     day: "17",
