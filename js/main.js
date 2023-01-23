@@ -216,6 +216,36 @@ function articleBox(n) {
   tagsList.innerHTML = tagsText + tagFlat;
 }
 
+function changeBox(month, day, year, change) {
+  let bigArticle = document.createElement("div");
+  bigArticle.classList = "big-article";
+  document.getElementById("big-list").appendChild(bigArticle);
+
+  let row = document.createElement("div");
+  row.classList = "row";
+  bigArticle.appendChild(row);
+
+  let colb = document.createElement("div");
+  colb.classList = "col-lg-10 col-sm-12";
+  row.appendChild(colb);
+
+  let bigDate = document.createElement("h3");
+  bigDate.innerText = month + " " + day + ", " + year;
+  colb.appendChild(bigDate);
+
+  const lineBreak = document.createElement("br");
+  colb.appendChild(lineBreak);
+
+  var thisChanges = change.split("-");
+
+  const bigDesc = document.createElement("ul");
+  for (let i = 0; i < thisChanges.length; i++) {
+    bigDesc.innerHTML += "<li>" + thisChanges[i] + "</li>";
+  }
+  bigDesc.style.listStyleType = "'- '";
+  colb.appendChild(bigDesc);
+}
+
 const tags = [
   { id: "apple", amt: "3", text: "Apple" },
   { id: "software", amt: "1", text: "Software" },
