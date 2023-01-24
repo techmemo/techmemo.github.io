@@ -206,7 +206,7 @@ function articleBox(n) {
 
   var thisTags = big[n].tags.split(" ");
 
-  let tagFlat = thisTags[0];
+  let tagFlat = '<a href="/tags/' + thisTags[0] + '/">' + thisTags[0] + "</a>";
 
   for (let i = 1; i < thisTags.length; i++) {
     tagFlat +=
@@ -251,7 +251,7 @@ const tags = [
   { id: "software", amt: "1", text: "Software" },
   { id: "google", amt: "1", text: "Google" },
   { id: "laptop", amt: "1", text: "Laptop" },
-  { id: "computer", amt: "1", text: "Computer" },
+  { id: "desktop", amt: "0", text: "Desktop" },
 ];
 
 function tagBox() {
@@ -395,7 +395,7 @@ const big = [
     year: "2023",
     alt: "MacBook Pro (2023)",
     hover: "MacBook Pro (2023)",
-    tags: "apple laptop computer",
+    tags: "apple laptop",
     topic: "",
   },
 ];
