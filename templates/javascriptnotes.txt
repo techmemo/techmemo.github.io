@@ -37,7 +37,7 @@ topics can be manual because they are easier to update [jk]
 
 automate home page boxes [DONE]
 
-automatically build box of tags on article page based on big array
+automatically build box of tags on article page based on big array [DONE] [I THINK]
 
 
 LONG TERM GOAL: 
