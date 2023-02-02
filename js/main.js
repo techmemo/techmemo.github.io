@@ -248,8 +248,9 @@ function changeBox(month, day, year, change) {
 
 const tags = [
   { id: "apple", amt: "3", text: "Apple" },
-  { id: "software", amt: "1", text: "Software" },
+  { id: "samsung", amt: "1", text: "Samsung" },
   { id: "google", amt: "1", text: "Google" },
+  { id: "software", amt: "1", text: "Software" },
   { id: "laptop", amt: "1", text: "Laptop" },
   { id: "desktop", amt: "0", text: "Desktop" },
 ];
@@ -276,6 +277,7 @@ const months = [
   { y: "2022", m: "11", amt: "1", text: "November" },
   { y: "2022", m: "12", amt: "2", text: "December" },
   { y: "2023", m: "1", amt: "1", text: "January" },
+  { y: "2023", m: "2", amt: "1", text: "February" },
 ];
 
 function monthBox() {
@@ -397,6 +399,21 @@ const big = [
     hover: "MacBook Pro (2023)",
     tags: "apple laptop",
     topic: "",
+  },
+  {
+    id: "samsungwinter2023",
+    author: "Matthew Nudelman",
+    title: "Samsung Galaxy Unpacked to Reveal Galaxy S23 Phones Today",
+    label: "Samsung Galaxy Unpacked 2023",
+    desc: "Today, Samsung is set to reveal the Galaxy S23 series of smartphones.",
+    month: "February",
+    m: "2",
+    day: "1",
+    year: "2023",
+    alt: "Galaxy Unpacked 2023",
+    hover: "Galaxy Unpacked 2023",
+    tags: "samsung",
+    topic: "phones",
   },
 ];
 
@@ -605,6 +622,7 @@ ARTICLE INDICES -- (EACH NEW ARTICLE IS THE NEXT ONE)
 3 : pixelwatch.html
 4 : applewatchstress.html
 5 : macbookpro.html
+6 : samsungwinter2023.html
 
 
 */
