@@ -157,8 +157,12 @@ function articleBox(n) {
   bigArticle.appendChild(row);
 
   let cola = document.createElement("div");
-  cola.classList = "col-lg-2 col-sm-3";
+  cola.classList = "col-lg-3 col-sm-2";
   row.appendChild(cola);
+
+  let colc = document.createElement("div");
+  colc.classList = "col-sm-1";
+  row.appendChild(colc);
 
   let imgFrame = document.createElement("div");
   imgFrame.classList = "big-frame";
@@ -172,11 +176,12 @@ function articleBox(n) {
   imgFrame.appendChild(image);
 
   let colb = document.createElement("div");
-  colb.classList = "col-sm-10";
+  colb.classList = "col-sm-10 big-text";
   row.appendChild(colb);
 
   let bigTitle = document.createElement("h3");
   bigTitle.innerText = big[n].title;
+  bigTitle.classList = "big-title";
   colb.appendChild(bigTitle);
 
   const bigDate = document.createElement("h5");
