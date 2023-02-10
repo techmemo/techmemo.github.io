@@ -20,3 +20,11 @@
 
 01-13-2023 :
     - Article lists now display each article's individual tags
+
+02-06-2023 : 
+    - Article builder in development
+
+02-10-2023 :
+    - Fixed article images overlapping text (temporary fix)
+        - Images are now above rather than next to the text (want to fix this eventually)
+    - Computers topic!

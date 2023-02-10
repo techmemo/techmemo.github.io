@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Update Log | Techmemos</title>
+    <title>Computers | Techmemos</title>
 
     <link rel="stylesheet" href="/style.css" />
 
@@ -65,25 +65,19 @@
 
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="/topic/phones.html"
-                      >Phones</a
-                    >
+                    <a class="dropdown-item" href="#">Phones</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/topic/tablets.html"
-                      >Tablets
-                    </a>
+                    <a class="dropdown-item" href="tablets.html">Tablets </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/topic/wearables.html"
-                      >Wearables</a
-                    >
+                    <a class="dropdown-item" href="wearables.html">Wearables</a>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href=""
+              <a class="nav-link" aria-current="page" href="/changelog/"
                 ><b><i>Update Log</i></b></a
               >
             </li>
@@ -95,73 +89,19 @@
       </div>
       <div class="row"></div>
     </div>
-
     <div class="container">
+      <h2><u>Computers</u></h2>
       <!-- this container is for the entire page, each new article goes within the list, on top -->
-      <h1><u>Update Log</u></h1>
       <div class="row">
         <div class="col-md-9">
-          <ul class="new-articles biglist" id="big-list">
+          <ul class="new-articles" id="big-list">
             <!--big-article class is article template-->
             <script>
-              changeBox(
-                "February",
-                "10",
-                "2023",
-                "Fixed article images overlapping text (temporary fix)-Images are now above rather than next to the text (want to fix this eventually)-<b>Computers topic!</b>"
-              );
-              changeBox(
-                "February",
-                "6",
-                "2023",
-                "Article builder in development"
-              );
-              changeBox(
-                "January",
-                "13",
-                "2023",
-                "Article lists now display each article's individual tags"
-              );
-              changeBox(
-                "January",
-                "11",
-                "2023",
-                'Article pages "Tags on this" box is fully automated based on current page'
-              );
-              changeBox(
-                "January",
-                "10",
-                "2023",
-                "Home page boxes are automated"
-              );
-              changeBox(
-                "January",
-                "9",
-                "2023",
-                "Tag and Topic pages update automatically-Google Analytics is now active"
-              );
-              changeBox(
-                "January",
-                "4",
-                "2023",
-                "Newest and ALL MONTH PAGES update AUTOMATICALLY!!!-Tag pages may have this in the future"
-              );
-              changeBox(
-                "January",
-                "3",
-                "2023",
-                "JavaScript is now used for the Month Directory and Tag boxes for easier consistency across pages-New entries can be created by editing the arrays in main.js-Changes are reflected on the page automatically-All information is from main.js, editing pages to add a tag to the list is no longer needed"
-              );
+              topicList();
             </script>
           </ul>
         </div>
         <div class="col-md-3">
-          <div class="directory" id="monthbox">
-            <h4>Directory</h4>
-            <script>
-              monthBox();
-            </script>
-          </div>
           <div class="directory" id="tagbox">
             <h4>Tags</h4>
             <script>

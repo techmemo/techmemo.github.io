@@ -403,7 +403,7 @@ const big = [
     alt: "MacBook Pro (2023)",
     hover: "MacBook Pro (2023)",
     tags: "apple laptop",
-    topic: "",
+    topic: "computers",
   },
   {
     id: "samsungwinter2023",
