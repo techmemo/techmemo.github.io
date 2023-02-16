@@ -28,3 +28,6 @@
     - Fixed article images overlapping text (temporary fix)
         - Images are now above rather than next to the text (want to fix this eventually)
     - Computers topic!
+
+02-16-2023 : 
+    - Articles can now be made with article builder

@@ -406,7 +406,7 @@ const big = [
     topic: "computers",
   },
   {
-    id: "samsungwinter2023",
+    id: "samsungwinter2023rumors",
     author: "Matthew Nudelman",
     title: "Samsung Galaxy Unpacked to Reveal Galaxy S23 Phones Today",
     label: "Samsung Galaxy Unpacked 2023",
@@ -414,6 +414,21 @@ const big = [
     month: "February",
     m: "2",
     day: "1",
+    year: "2023",
+    alt: "Galaxy Unpacked 2023",
+    hover: "Galaxy Unpacked 2023",
+    tags: "samsung",
+    topic: "phones",
+  },
+  {
+    id: "samsungwinter2023",
+    author: "Matthew Nudelman",
+    title: "Samsung Galaxy Unpacked Reveals Galaxy S23 Phones",
+    label: "Samsung Galaxy Unpacked 2023",
+    desc: "On February 1, Samsung revealed the latest phones in the Galaxy S series.",
+    month: "February",
+    m: "2",
+    day: "16",
     year: "2023",
     alt: "Galaxy Unpacked 2023",
     hover: "Galaxy Unpacked 2023",
@@ -627,7 +642,8 @@ ARTICLE INDICES -- (EACH NEW ARTICLE IS THE NEXT ONE)
 3 : pixelwatch.html
 4 : applewatchstress.html
 5 : macbookpro.html
-6 : samsungwinter2023.html
+6 : samsungwinter2023rumors.html
+7 : samsungwinter2023.html
 
 
 */
