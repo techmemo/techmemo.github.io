@@ -435,6 +435,21 @@ const big = [
     tags: "samsung",
     topic: "phones",
   },
+  {
+    id: "s23demo",
+    author: "Matthew Nudelman",
+    title: "Opinion: Trying Out the Samsung Galaxy S23",
+    label: "Trying the Galaxy S23",
+    desc: "This weekend, I went to Best Buy and tried out the demo Samsung Galaxy S23 phones.",
+    month: "February",
+    m: "2",
+    day: "23",
+    year: "2023",
+    alt: "Galaxy S23 phones.",
+    hover: "Galaxy S23 phones",
+    tags: "samsung",
+    topic: "phones",
+  },
 ];
 
 function tagList() {
@@ -644,6 +659,7 @@ ARTICLE INDICES -- (EACH NEW ARTICLE IS THE NEXT ONE)
 5 : macbookpro.html
 6 : samsungwinter2023rumors.html
 7 : samsungwinter2023.html
+8 : s23demo.html
 
 
 */
