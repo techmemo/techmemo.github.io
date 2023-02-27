@@ -45,6 +45,7 @@
 }
 .home-article:hover {
   background-color: rgb(126, 144, 187);
+  color: purple;
 }
 
 .home-title {
@@ -154,4 +155,8 @@ a:active {
   position: relative;
   color: inherit;
   text-decoration: none;
+}
+
+li:hover {
+  color: rgb(135, 39, 138);
 }
