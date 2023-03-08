@@ -283,6 +283,7 @@ const months = [
   { y: "2022", m: "12", amt: "2", text: "December" },
   { y: "2023", m: "1", amt: "1", text: "January" },
   { y: "2023", m: "2", amt: "1", text: "February" },
+  { y: "2023", m: "3", amt: "1", text: "March" },
 ];
 
 function monthBox() {
@@ -448,6 +449,21 @@ const big = [
     alt: "Galaxy S23 phones.",
     hover: "Galaxy S23 phones",
     tags: "samsung",
+    topic: "phones",
+  },
+  {
+    id: "marchiphone15",
+    author: "Matthew Nudelman",
+    title: "Early Rumors of the iPhone 15",
+    label: "iPhone 15 Rumors",
+    desc: "Six months before the expected reveal of the iPhone 15 lineup, rumors and speculation have already begun to spread.",
+    month: "March",
+    m: "3",
+    day: "8",
+    year: "2023",
+    alt: "Yellow iPhone 14.",
+    hover: "The new Yellow color option for the iPhone 14.",
+    tags: "apple",
     topic: "phones",
   },
 ];
@@ -660,6 +676,7 @@ ARTICLE INDICES -- (EACH NEW ARTICLE IS THE NEXT ONE)
 6 : samsungwinter2023rumors.html
 7 : samsungwinter2023.html
 8 : s23demo.html
+9 : marchiphone15.html
 
 
 */
