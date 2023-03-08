@@ -252,7 +252,7 @@ function changeBox(month, day, year, change) {
 }
 
 const tags = [
-  { id: "apple", amt: "3", text: "Apple" },
+  { id: "apple", amt: "5", text: "Apple" },
   { id: "samsung", amt: "3", text: "Samsung" },
   { id: "google", amt: "1", text: "Google" },
   { id: "software", amt: "1", text: "Software" },
