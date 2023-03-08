@@ -45,7 +45,7 @@
 }
 .home-article:hover {
   background-color: rgb(126, 144, 187);
-  color: purple;
+  color: rgb(15, 104, 67);
 }
 
 .home-title {
@@ -144,7 +144,7 @@ a > sup {
 }
 
 a > sup:hover {
-  color: blueviolet;
+  color: rgb(15, 104, 67);
 }
 
 a,
@@ -158,5 +158,9 @@ a:active {
 }
 
 li:hover {
-  color: rgb(135, 39, 138);
+  color: rgb(15, 104, 67);
+}
+
+.big-article:hover {
+  color: rgb(15, 104, 67);
 }
