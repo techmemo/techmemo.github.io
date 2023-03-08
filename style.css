@@ -74,8 +74,9 @@
   margin-bottom: 10px;
   background-color: rgb(127, 169, 216);
 }
-.big-article:hover {
-  background-color: rgb(126, 144, 187);
+.big-article:hover,
+.home-article:hover {
+  background-color: rgb(184, 190, 250);
 }
 
 .big-text,
