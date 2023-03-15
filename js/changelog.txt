@@ -31,3 +31,15 @@
 
 02-16-2023 : 
     - Articles can now be made with article builder
+
+02-27-2023 :
+    - Improved contrast of links from background
+
+03-08-2023 :
+    - Changed hover color of links to green to improve contrast
+
+03-09-2023 :
+    - Fixed consistency of new hover color across all links on the site
+    - Made hover color of articles brighter instead of darker to help text stand out more
+    - Brightened background color of articles
+    - Increased size of article text
