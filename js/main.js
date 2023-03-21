@@ -555,6 +555,44 @@ function homeBox(n) {
   homeDiv.appendChild(homeText);
 }
 
+function homeTopic(n, type) {
+  let homeLink = document.createElement("a");
+  homeLink.href =
+    "/" + big[n].year + "/" + big[n].m + "/" + big[n].id + ".html";
+  document.getElementById(type).appendChild(homeLink);
+
+  let homeDiv = document.createElement("div");
+  homeDiv.classList = "home-article";
+  homeLink.appendChild(homeDiv);
+
+  let homeImg = document.createElement("img");
+  homeImg.classList = "home-img";
+  homeImg.src = "/img/" + big[n].id + ".png";
+  homeImg.alt = big[n].alt;
+  homeImg.title = big[n].hover;
+  homeDiv.appendChild(homeImg);
+
+  let homeText = document.createElement("h2");
+  homeText.classList = "home-title";
+  homeText.innerText = big[n].label;
+  homeDiv.appendChild(homeText);
+}
+
+function findHomeBoxes(type) {
+  var count = 0;
+  for (let h = big.length; h > 0; h--) {
+    if (big[h].topic == type && count < 4) {
+      homeTopic(h, type);
+      count++;
+      break;
+    }
+  }
+}
+
+function homeGrid(type) {
+  findHomeBoxes(type);
+}
+
 /** <a href="2022/11/ios16.html"
         ><div class="home-article">
           <img
