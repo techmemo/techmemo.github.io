@@ -466,6 +466,21 @@ const big = [
     tags: "apple",
     topic: "phones",
   },
+  {
+    id: "marchwindows2023",
+    author: "Matthew Nudelman",
+    title: "New Features Coming to Windows 11 This Month",
+    label: "New Windows 11 Features",
+    desc: "This March, several new features will be available for Windows 11 users.",
+    month: "March",
+    m: "3",
+    day: "21",
+    year: "2023",
+    alt: "Windows 11.",
+    hover: "Windows 11.",
+    tags: "software",
+    topic: "software",
+  },
 ];
 
 function tagList() {
@@ -677,6 +692,7 @@ ARTICLE INDICES -- (EACH NEW ARTICLE IS THE NEXT ONE)
 7 : samsungwinter2023.html
 8 : s23demo.html
 9 : marchiphone15.html
+10 : marchwindows2023.html
 
 
 */
