@@ -176,3 +176,9 @@ li:hover {
 .page-header a:hover {
   color: rgb(15, 104, 67);
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(42, 42, 43);
+  }
+}
