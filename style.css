@@ -179,6 +179,10 @@ li:hover {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: rgb(42, 42, 43);
+    background-color: rgb(47, 47, 49);
+  }
+  h1,
+  .nav-item {
+    color: antiquewhite;
   }
 }
