@@ -178,11 +178,14 @@ li:hover {
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
+  body,
+  .dropdown-menu {
     background-color: rgb(47, 47, 49);
   }
   h1,
-  .nav-item {
+  h2,
+  .nav-item,
+  .dropdown-menu {
     color: antiquewhite;
   }
 }
