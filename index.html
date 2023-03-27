@@ -95,22 +95,54 @@
         </div>
       </div>
       <div class="row">
-        <div class="header-line"></div>
+        <div class="header-line"><hr /></div>
       </div>
       <div class="row"></div>
+      <div style="
+        display:flex;
+        flex-wrap: wrap-reverse;
+        flex-direction: row-reverse;
+        position: fixed;
+        width: 100%;
+        height: 100%;">
+      <button onclick="scrollDown()" style="
+        width:130px;
+        height:130px;
+        position: absolute;
+        right:350px;
+        bottom:150px;
+        background-color:rgb(51, 51, 51);">
+      <img src="/img/down.png" style="max-width:100%"></button>
     </div>
-    <div class="container container-grid" id="homebox">
+    <div class="row" style="background-color:gray"><div class="col-md-2"></div><div class="col-md-3"><h2><br>Phones</h2></div></div>
+    <div class="container container-grid" id="phones">
       <script>
-        homeBox(1);
-        homeBox(2);
-        homeBox(3);
-        homeBox(4);
-        homeBox(5);
-        homeBox(6);
-        homeBox(7);
-        homeBox(9);
+        homeTopic(1,"phones");
+        homeTopic(6, "phones");
+        homeTopic(7, "phones");
+        homeTopic(9, "phones");
       </script>
     </div>
-    <hr />
+    <div class="row" style="background-color:gray"><div class="col-md-2"></div><div class="col-md-3"><h2><br>Tablets</h2></div></div>
+    <div class="container container-grid" id="tablets">
+      <script>
+        homeTopic(2,"tablets");
+      </script>
+    </div>
+    <div class="row" style="background-color:gray"><div class="col-md-2"></div><div class="col-md-3"><br><h2>Wearables</h2></div></div>
+    <div class="container container-grid" id="wearables">
+      <script>
+        homeTopic(3, "wearables");
+        homeTopic(4 , "wearables");
+      </script>
+    </div>
+    <div class="row" style="background-color:gray"><div class="col-md-2"></div><div class="col-md-3"><br><h2>Computers</h2></div></div>
+    <div class="container container-grid" id="computers">
+      <script>
+        homeTopic(5, "computers");
+        homeTopic(10 , "computers");
+      </script>
+    </div>
+    <div id="pagebottom"></div>
   </body>
 </html>

@@ -11,6 +11,11 @@ function hCite(c, n) {
   }
 }
 
+function scrollDown() {
+  let pageBottom = document.getElementById("pagebottom");
+  pageBottom.scrollIntoView();
+}
+
 function getFolder() {
   var loc = window.location.pathname.split("/");
 
@@ -255,7 +260,7 @@ const tags = [
   { id: "apple", amt: "5", text: "Apple" },
   { id: "samsung", amt: "3", text: "Samsung" },
   { id: "google", amt: "1", text: "Google" },
-  { id: "software", amt: "1", text: "Software" },
+  { id: "software", amt: "2", text: "Software" },
   { id: "laptop", amt: "1", text: "Laptop" },
   { id: "desktop", amt: "0", text: "Desktop" },
 ];
@@ -479,7 +484,7 @@ const big = [
     alt: "Windows 11.",
     hover: "Windows 11.",
     tags: "software",
-    topic: "software",
+    topic: "computers",
   },
 ];
 
@@ -575,6 +580,7 @@ function homeTopic(n, type) {
   let homeText = document.createElement("h2");
   homeText.classList = "home-title";
   homeText.innerText = big[n].label;
+  //homeText.innerText = type;
   homeDiv.appendChild(homeText);
 }
 
