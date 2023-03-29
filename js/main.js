@@ -289,7 +289,7 @@ const months = [
   { y: "2023", m: "1", amt: "1", text: "January" },
   { y: "2023", m: "2", amt: "1", text: "February" },
   { y: "2023", m: "3", amt: "1", text: "March" },
-];
+]; //
 
 function monthBox() {
   let lineBreak = document.createElement("br");
