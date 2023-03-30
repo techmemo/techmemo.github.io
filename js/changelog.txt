@@ -43,3 +43,12 @@
     - Made hover color of articles brighter instead of darker to help text stand out more
     - Brightened background color of articles
     - Increased size of article text
+
+03-15-2023 :
+    - Made background hover color easier to look at
+
+03-23-2023 :
+    - Added automatic dark mode (changes with OS settings)
+
+03-27-2023 :
+    - New home page with topic separators and "scroll to bottom" button

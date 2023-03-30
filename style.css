@@ -181,6 +181,10 @@ li:hover {
   color: rgb(15, 104, 67);
 }
 
+.tagflat > a:hover {
+  color: rgb(100, 180, 143);
+}
+
 @media (prefers-color-scheme: dark) {
   body,
   .dropdown-menu {

@@ -210,6 +210,7 @@ function articleBox(n) {
 
   let tagsList = document.createElement("p");
   tagsList.style.fontWeight = "bold";
+  tagsList.classList += "tagflat";
   colb.appendChild(tagsList);
 
   let tagsText = "<i>Tags: </i>";
@@ -349,7 +350,7 @@ const big = [
     hover:
       "An icon with the number 16 representing iOS 16, the newest version of iOS.",
     tags: "apple software",
-    topic: "phones",
+    topic: "phones software",
   },
   {
     id: "ipad10",
@@ -415,7 +416,7 @@ const big = [
     id: "samsungwinter2023rumors",
     author: "Matthew Nudelman",
     title: "Samsung Galaxy Unpacked to Reveal Galaxy S23 Phones Today",
-    label: "Samsung Galaxy Unpacked 2023",
+    label: "Galaxy Unpacked Today",
     desc: "Today, Samsung is set to reveal the Galaxy S23 series of smartphones.",
     month: "February",
     m: "2",
@@ -430,7 +431,7 @@ const big = [
     id: "samsungwinter2023",
     author: "Matthew Nudelman",
     title: "Samsung Galaxy Unpacked Reveals Galaxy S23 Phones",
-    label: "Samsung Galaxy Unpacked 2023",
+    label: "Samsung Galaxy Unpacked",
     desc: "On February 1, Samsung revealed the latest phones in the Galaxy S series.",
     month: "February",
     m: "2",
@@ -484,7 +485,7 @@ const big = [
     alt: "Windows 11.",
     hover: "Windows 11.",
     tags: "software",
-    topic: "computers",
+    topic: "computers software",
   },
 ];
 
@@ -645,6 +646,21 @@ function taggedList() {
 }
 
 function topicList() {
+  var loc = window.location.pathname.split("/");
+
+  var folder = loc[loc.length - 1];
+
+  for (let n = big.length - 1; n > 0; n--) {
+    var thisTopics = big[n].topic.split(" ");
+    for (let t = 0; t < thisTopics.length; t++) {
+      if (thisTopics[t] + ".html" == folder) {
+        articleBox(n);
+      }
+    }
+  }
+}
+
+function oldTopicList() {
   var loc = window.location.pathname.split("/");
 
   var folder = loc[loc.length - 1];
