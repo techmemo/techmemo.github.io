@@ -162,7 +162,7 @@ function articleBox(n) {
   bigArticle.appendChild(row);
 
   let cola = document.createElement("div");
-  cola.classList = "col-lg-3 col-sm-2";
+  cola.classList = "col-lg-2 col-sm-2 col-md-3 col-xs-3";
   row.appendChild(cola);
 
   let colc = document.createElement("div");
@@ -181,7 +181,7 @@ function articleBox(n) {
   imgFrame.appendChild(image);
 
   let colb = document.createElement("div");
-  colb.classList = "col-sm-10 big-text";
+  colb.classList = "col-sm-8 big-text";
   row.appendChild(colb);
 
   let bigTitle = document.createElement("h3");
