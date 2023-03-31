@@ -185,10 +185,17 @@ li:hover {
   color: rgb(100, 180, 143);
 }
 
+.homehead {
+  background-color: lightgray;
+}
+
 @media (prefers-color-scheme: dark) {
   body,
   .dropdown-menu {
     background-color: rgb(47, 47, 49);
+  }
+  .homehead {
+    background-color: gray;
   }
   h1,
   h2,
