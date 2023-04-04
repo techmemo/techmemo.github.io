@@ -416,7 +416,7 @@ const big = [
     id: "samsungwinter2023rumors",
     author: "Matthew Nudelman",
     title: "Samsung Galaxy Unpacked to Reveal Galaxy S23 Phones Today",
-    label: "Galaxy Unpacked Today",
+    label: "Galaxy Unpacked 2023",
     desc: "Today, Samsung is set to reveal the Galaxy S23 series of smartphones.",
     month: "February",
     m: "2",
