@@ -199,8 +199,17 @@ li:hover {
   }
   h1,
   h2,
+  p,
+  .new-articles,
   .nav-item,
   .dropdown-menu {
     color: antiquewhite;
+  }
+  article > h2,
+  .big-article,
+  .big-text,
+  .tagflat,
+  .big-text > p {
+    color: black;
   }
 }
