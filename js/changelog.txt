@@ -59,3 +59,8 @@
     - Color of article box tags now changes when hovering to better convey that it is a link
 03-31-2023 :
     - Images are finally back to the correct position on the side of the text in article boxes!
+
+04-04-2023 :
+    - Improved consistency of text color in dark mode
+    - Fixed links on home page being unclickable
+    - [ISSUE] Home scroll button appears behind home links on smaller displays
