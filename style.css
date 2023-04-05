@@ -205,6 +205,58 @@ li:hover {
   .dropdown-menu {
     color: antiquewhite;
   }
+
+  .big-article,
+  .big-frame > img,
+  .directory,
+  .home-article {
+    background-color: rgb(47, 47, 49);
+    border-color: rgb(127, 169, 216);
+    border-width: 2px;
+    border-style: solid;
+  }
+
+  .big-article:hover,
+  .home-article:hover {
+    background-color: rgb(127, 169, 216);
+  }
+
+  article > h2,
+  .big-article,
+  .directory,
+  .big-text,
+  .tagflat,
+  .big-text > p {
+    color: antiquewhite;
+  }
+  .big-article:hover .big-text,
+  .big-article:hover .big-text > p,
+  .home-article:hover h2 {
+    color: rgb(10, 68, 43);
+  }
+
+  .tagflat > a:hover {
+    color: rgb(58, 126, 93);
+  }
+}
+
+/*
+@media (prefers-color-scheme: dark) {
+  body,
+  .dropdown-menu {
+    background-color: rgb(47, 47, 49);
+  }
+  .homehead {
+    background-color: gray;
+  }
+  h1,
+  h2,
+  p,
+  .new-articles,
+  .nav-item,
+  .dropdown-menu {
+    color: antiquewhite;
+  }
   article > h2,
   .big-article,
   .big-text,
@@ -212,10 +264,12 @@ li:hover {
   .big-text > p {
     color: black;
   }
-  .big-article:hover .big-text, .big-article:hover .big-text > p {
-    
-      color:rgb(15, 104, 67);
-      
-    }
+  .big-article:hover .big-text,
+  .big-article:hover .big-text > p {
+    color: rgb(15, 104, 67);
+  }
+  .big-article:hover + .directory {
+    background-color: blue;
   }
 }
+*/
