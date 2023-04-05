@@ -221,7 +221,6 @@ li:hover {
     background-color: rgb(127, 169, 216);
   }
 
-  article > h2,
   .big-article,
   .directory,
   .big-text,
@@ -229,6 +228,12 @@ li:hover {
   .big-text > p {
     color: antiquewhite;
   }
+
+  article > h2,
+  article > p {
+    color: black;
+  }
+
   .big-article:hover .big-text,
   .big-article:hover .big-text > p,
   .home-article:hover h2,
