@@ -231,7 +231,8 @@ li:hover {
   }
   .big-article:hover .big-text,
   .big-article:hover .big-text > p,
-  .home-article:hover h2 {
+  .home-article:hover h2,
+  .big-article:hover {
     color: rgb(10, 68, 43);
   }
 
