@@ -212,4 +212,10 @@ li:hover {
   .big-text > p {
     color: black;
   }
+  .big-article:hover .big-text, .big-article:hover .big-text > p {
+    
+      color:rgb(15, 104, 67);
+      
+    }
+  }
 }
