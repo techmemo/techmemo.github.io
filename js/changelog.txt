@@ -64,3 +64,10 @@
     - Improved consistency of text color in dark mode
     - Fixed links on home page being unclickable
     - [ISSUE] Home scroll button appears behind home links on smaller displays
+
+04-05-2023 :
+    - Updated design of dark mode
+
+04-17-2023 :
+    - Removed scroll button
+    - Reduced empty space between home topics
