@@ -260,7 +260,7 @@ function changeBox(month, day, year, change) {
 const tags = [
   { id: "apple", amt: "5", text: "Apple" },
   { id: "samsung", amt: "3", text: "Samsung" },
-  { id: "google", amt: "1", text: "Google" },
+  { id: "google", amt: "2", text: "Google" },
   { id: "software", amt: "2", text: "Software" },
   { id: "laptop", amt: "1", text: "Laptop" },
   { id: "desktop", amt: "0", text: "Desktop" },
@@ -287,9 +287,10 @@ function tagBox() {
 const months = [
   { y: "2022", m: "11", amt: "1", text: "November" },
   { y: "2022", m: "12", amt: "2", text: "December" },
-  { y: "2023", m: "1", amt: "1", text: "January" },
-  { y: "2023", m: "2", amt: "1", text: "February" },
-  { y: "2023", m: "3", amt: "1", text: "March" },
+  { y: "2023", m: "1", amt: "2", text: "January" },
+  { y: "2023", m: "2", amt: "3", text: "February" },
+  { y: "2023", m: "3", amt: "2", text: "March" },
+  { y: "2023", m: "4", amt: "1", text: "April" },
 ];
 
 function monthBox() {
@@ -486,6 +487,21 @@ const big = [
     hover: "Windows 11.",
     tags: "software",
     topic: "computers software",
+  },
+  {
+    id: "pixelfoldinfo",
+    author: "Matthew Nudelman",
+    title: "Google Set to Unveil New Pixel Fold at May 10 Event",
+    label: "Pixel Fold Coming Soon",
+    desc: "At the annual Google I/O event on May 10, 2023, Google is set to publicly announce a foldable smartphone to call their own.",
+    month: "April",
+    m: "4",
+    day: "20",
+    year: "2023",
+    alt: "Google Pixel.",
+    hover: "Google Pixel.",
+    tags: "google",
+    topic: "phones",
   },
 ];
 
@@ -753,6 +769,8 @@ ARTICLE INDICES -- (EACH NEW ARTICLE IS THE NEXT ONE)
 8 : s23demo.html
 9 : marchiphone15.html
 10 : marchwindows2023.html
+11 : pixelfoldinfo.html 
+12 : ios17sideload.html
 
 
 */
