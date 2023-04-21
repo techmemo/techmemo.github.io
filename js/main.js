@@ -503,6 +503,21 @@ const big = [
     tags: "google",
     topic: "phones",
   },
+  {
+    id: "ios17sideload",
+    author: "Matthew Nudelman",
+    title: "iOS 17 May Allow Users to Sideload Apps",
+    label: "Sideload Apps in iOS 17",
+    desc: "iOS 17, coming to Apple devices later this year, is said to finally allow users to sideload apps on their devices as per a new regulation in the EU. This would allow developers to make their apps available outside of the App Store.",
+    month: "April",
+    m: "4",
+    day: "21",
+    year: "2023",
+    alt: "iOS 17.",
+    hover: "iOS 17.",
+    tags: "apple software",
+    topic: "phones software",
+  },
 ];
 
 function tagList() {
