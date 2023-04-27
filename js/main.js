@@ -279,9 +279,22 @@ function tagBox() {
     listTags.appendChild(link);
     const item = document.createElement("li");
 
-    item.innerText = tags[i].text + " (" + tags[i].amt + ")";
+    item.innerText = tags[i].text + " (" + tagAmount(i) + ")";
     link.appendChild(item);
   }
+}
+
+function tagAmount(tag) {
+  let tagCount = 0;
+  for (let n = big.length - 1; n > 0; n--) {
+    var thisTags = big[n].tags.split(" ");
+    for (let t = 0; t < thisTags.length; t++) {
+      if (thisTags[t] == tags[tag].id) {
+        tagCount++;
+      }
+    }
+  }
+  return tagCount;
 }
 
 const months = [

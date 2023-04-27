@@ -71,3 +71,7 @@
 04-17-2023 :
     - Removed scroll button
     - Reduced empty space between home topics
+
+04-27-2023 :
+    - Removed extra horizontal line on home page
+    - Article count on the tag list updates dynamically!
