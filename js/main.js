@@ -263,7 +263,6 @@ const tags = [
   { id: "google", amt: "2", text: "Google" },
   { id: "software", amt: "3", text: "Software" },
   { id: "laptop", amt: "1", text: "Laptop" },
-  { id: "desktop", amt: "0", text: "Desktop" },
 ];
 
 function tagBox() {
@@ -304,6 +303,7 @@ const months = [
   { y: "2023", m: "2", amt: "3", text: "February" },
   { y: "2023", m: "3", amt: "2", text: "March" },
   { y: "2023", m: "4", amt: "1", text: "April" },
+  { y: "2023", m: "5", amt: "1", text: "May" },
 ];
 
 function monthBox() {
@@ -530,6 +530,21 @@ const big = [
     hover: "iOS 17.",
     tags: "apple software",
     topic: "phones software",
+  },
+  {
+    id: "ipadultra",
+    author: "Matthew Nudelman",
+    title: "iPad with Large 16-inch Display Rumored for Release This Year",
+    label: "New Larger iPad Rumored",
+    desc: "Apple is rumored to be working on a new iPad with a 16-inch display for release in the fourth quarter of 2023.",
+    month: "May",
+    m: "5",
+    day: "1",
+    year: "2023",
+    alt: "iPad Pro.",
+    hover: "iPad Pro.",
+    tags: "apple",
+    topic: "tablets",
   },
 ];
 
@@ -799,6 +814,7 @@ ARTICLE INDICES -- (EACH NEW ARTICLE IS THE NEXT ONE)
 10 : marchwindows2023.html
 11 : pixelfoldinfo.html 
 12 : ios17sideload.html
+13 : ipadultra.html
 
 
 */
