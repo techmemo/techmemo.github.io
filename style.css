@@ -189,6 +189,13 @@ li:hover {
   background-color: lightgray;
 }
 
+.twitter-timeline {
+  border-width: 2px;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 14px;
+}
+
 @media (prefers-color-scheme: dark) {
   body,
   .dropdown-menu {
