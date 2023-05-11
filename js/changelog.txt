@@ -75,3 +75,6 @@
 04-27-2023 :
     - Removed extra horizontal line on home page
     - Article count on the tag list updates dynamically!
+
+05-05-2023 :
+    - Added Twitter feed to "Newest" page
