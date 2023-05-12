@@ -546,6 +546,21 @@ const big = [
     tags: "apple",
     topic: "tablets",
   },
+  {
+    id: "googleio2023",
+    author: "Matthew Nudelman",
+    title: "Google Announces Several New Devices at This Year's Google I/O",
+    label: "Google I/O 2023",
+    desc: "At this year's Google I/O conference, Google had several announcements to make about new Pixel devices set to be releasing this year.",
+    month: "May",
+    m: "5",
+    day: "12",
+    year: "2023",
+    alt: "Google Pixel Fold.",
+    hover: "Google Pixel Fold.",
+    tags: "google",
+    topic: "phones tablets",
+  },
 ];
 
 function tagList() {
@@ -815,6 +830,7 @@ ARTICLE INDICES -- (EACH NEW ARTICLE IS THE NEXT ONE)
 11 : pixelfoldinfo.html 
 12 : ios17sideload.html
 13 : ipadultra.html
+14 : googleio.html
 
 
 */
