@@ -561,6 +561,21 @@ const big = [
     tags: "google",
     topic: "phones tablets",
   },
+  {
+    id: "applerumorsvr",
+    author: "Matthew Nudelman",
+    title: "Apple Likely to Announce Mixed-Reality Headset on June 5",
+    label: "Apple MR Headset Rumored",
+    desc: "At this year's WWDC in June, Apple is said to be unveiling its long-rumored mixed-reality headset.",
+    month: "May",
+    m: "5",
+    day: "23",
+    year: "2023",
+    alt: "Apple.",
+    hover: "Apple.",
+    tags: "apple",
+    topic: "wearables",
+  },
 ];
 
 function tagList() {
@@ -831,6 +846,7 @@ ARTICLE INDICES -- (EACH NEW ARTICLE IS THE NEXT ONE)
 12 : ios17sideload.html
 13 : ipadultra.html
 14 : googleio2023.html
+15 : applerumorsvr.html
 
 
 */
