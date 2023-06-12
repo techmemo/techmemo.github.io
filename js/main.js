@@ -227,9 +227,118 @@ function articleBox(n) {
   tagsList.innerHTML = tagsText + tagFlat;
 }
 
+function endingBox(n) {
+  let bigLink = document.createElement("a");
+  bigLink.href = "/" + big[n].year + "/" + big[n].m + "/" + big[n].id + ".html";
+  document.getElementById("big-list").appendChild(bigLink);
+
+  let bigArticle = document.createElement("div");
+  bigArticle.classList = "big-ending";
+  bigLink.appendChild(bigArticle);
+
+  let row = document.createElement("div");
+  row.classList = "row";
+  bigArticle.appendChild(row);
+
+  let cola = document.createElement("div");
+  cola.classList = "col-lg-2 col-sm-2 col-md-3 col-xs-3";
+  row.appendChild(cola);
+
+  let colc = document.createElement("div");
+  colc.classList = "col-sm-1";
+  row.appendChild(colc);
+
+  let imgFrame = document.createElement("div");
+  imgFrame.classList = "big-frame";
+  cola.appendChild(imgFrame);
+
+  let image = document.createElement("img");
+  image.src = "/img/" + big[n].id + ".png";
+  image.classList = "new-img";
+  image.alt = big[n].alt;
+  image.title = big[n].hover;
+  imgFrame.appendChild(image);
+
+  let colb = document.createElement("div");
+  colb.classList = "col-sm-8 big-text";
+  row.appendChild(colb);
+
+  let bigTitle = document.createElement("h3");
+  bigTitle.innerText = big[n].title;
+  bigTitle.classList = "big-title";
+  colb.appendChild(bigTitle);
+
+  const bigDate = document.createElement("h5");
+  bigDate.innerText =
+    "by " +
+    big[n].author +
+    " - " +
+    big[n].month +
+    " " +
+    big[n].day +
+    ", " +
+    big[n].year;
+  colb.appendChild(bigDate);
+
+  const lineBreak = document.createElement("br");
+  colb.appendChild(lineBreak);
+
+  const bigDesc = document.createElement("p");
+  bigDesc.innerText = big[n].desc;
+  colb.appendChild(bigDesc);
+
+  let tagsList = document.createElement("p");
+  tagsList.style.fontWeight = "bold";
+  tagsList.classList += "tagflat";
+  colb.appendChild(tagsList);
+
+  let tagsText = "<i>Tags: </i>";
+
+  var thisTags = big[n].tags.split(" ");
+
+  let tagFlat = '<a href="/tags/' + thisTags[0] + '/">' + thisTags[0] + "</a>";
+
+  for (let i = 1; i < thisTags.length; i++) {
+    tagFlat +=
+      ", " + '<a href="/tags/' + thisTags[i] + '/">' + thisTags[i] + "</a>";
+  }
+
+  tagsList.innerHTML = tagsText + tagFlat;
+}
+
 function changeBox(month, day, year, change) {
   let bigArticle = document.createElement("div");
   bigArticle.classList = "big-article";
+  document.getElementById("big-list").appendChild(bigArticle);
+
+  let row = document.createElement("div");
+  row.classList = "row";
+  bigArticle.appendChild(row);
+
+  let colb = document.createElement("div");
+  colb.classList = "col-lg-10 col-sm-12";
+  row.appendChild(colb);
+
+  let bigDate = document.createElement("h3");
+  bigDate.innerText = month + " " + day + ", " + year;
+  colb.appendChild(bigDate);
+
+  const lineBreak = document.createElement("br");
+  colb.appendChild(lineBreak);
+
+  var thisChanges = change.split("-");
+
+  const bigDesc = document.createElement("ul");
+  for (let i = 0; i < thisChanges.length; i++) {
+    bigDesc.innerHTML += "<li>" + thisChanges[i] + "</li>";
+  }
+  bigDesc.style.listStyleType = "'- '";
+  colb.appendChild(bigDesc);
+}
+
+function endingBox(month, day, year, change) {
+  let bigArticle = document.createElement("div");
+  bigArticle.classList = "big-ending";
   document.getElementById("big-list").appendChild(bigArticle);
 
   let row = document.createElement("div");
@@ -336,15 +445,15 @@ const big = [
   // for article lists
 
   {
-    id: "november",
-    author: "Firstname Lastname",
-    title: "Test Article",
-    label: "november",
-    desc: "Test description.",
-    month: "December",
-    m: "11",
-    day: "10",
-    year: "2022",
+    id: "ending",
+    author: "Matthew Nudelman",
+    title: "End of Site Operation Notice",
+    label: "End of Site",
+    desc: "",
+    month: "June",
+    m: "6",
+    day: "12",
+    year: "2023",
     alt: "Alt text.",
     hover: "Title text.",
     tags: "",
@@ -658,6 +767,30 @@ function homeTopic(n, type) {
 
   let homeDiv = document.createElement("div");
   homeDiv.classList = "home-article";
+  homeLink.appendChild(homeDiv);
+
+  let homeImg = document.createElement("img");
+  homeImg.classList = "home-img";
+  homeImg.src = "/img/" + big[n].id + ".png";
+  homeImg.alt = big[n].alt;
+  homeImg.title = big[n].hover;
+  homeDiv.appendChild(homeImg);
+
+  let homeText = document.createElement("h2");
+  homeText.classList = "home-title";
+  homeText.innerText = big[n].label;
+  //homeText.innerText = type;
+  homeDiv.appendChild(homeText);
+}
+
+function homeTopicEnd(n, type) {
+  let homeLink = document.createElement("a");
+  homeLink.href =
+    "/" + big[n].year + "/" + big[n].m + "/" + big[n].id + ".html";
+  document.getElementById(type).appendChild(homeLink);
+
+  let homeDiv = document.createElement("div");
+  homeDiv.classList = "home-ending";
   homeLink.appendChild(homeDiv);
 
   let homeImg = document.createElement("img");

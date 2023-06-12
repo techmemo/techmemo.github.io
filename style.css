@@ -52,6 +52,17 @@ html {
   color: rgb(15, 104, 67);
 }
 
+.home-ending {
+  border-radius: 10px;
+  padding: 11px;
+  margin: 7px;
+  background-color: rgb(113, 85, 179);
+  color: antiquewhite;
+}
+.home-ending:hover {
+  background-color: rgb(156, 105, 204);
+}
+
 .home-title {
   display: inline;
   position: relative;
@@ -81,6 +92,18 @@ html {
 .big-article:hover,
 .home-article:hover {
   background-color: rgb(173, 207, 245);
+}
+
+.big-ending {
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(113, 85, 179);
+  color: antiquewhite;
+}
+.big-ending:hover {
+  background-color: rgb(156, 105, 204);
 }
 
 .big-text,
@@ -169,6 +192,10 @@ li:hover {
   color: rgb(15, 104, 67);
 }
 
+.big-ending > div > div > ul > li:hover {
+  color: inherit;
+}
+
 .big-article:hover {
   color: rgb(15, 104, 67);
 }
@@ -223,9 +250,21 @@ li:hover {
     border-style: solid;
   }
 
+  .big-ending,
+  .home-ending {
+    background-color: rgb(47, 47, 49);
+    border-color: rgb(113, 85, 179);
+    border-width: 2px;
+    border-style: solid;
+  }
+
   .big-article:hover,
   .home-article:hover {
     background-color: rgb(127, 169, 216);
+  }
+
+  .home-ending:hover {
+    border-color: rgb(113, 85, 179);
   }
 
   .big-article,
